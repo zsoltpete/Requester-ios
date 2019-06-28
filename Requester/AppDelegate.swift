@@ -6,16 +6,26 @@
 //  Copyright © 2019. Zsolt Pete. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+	var guardWindow: UIWindow {
+		//swiftlint:disable force_unwrapping
+		return self.window!
+	}
 
+	static var shared: AppDelegate {
+		return UIApplication.shared.delegate as? AppDelegate ?? AppDelegate()
+	}
+
+	var themeService = ThemeType.service(initial: .light)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 

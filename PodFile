@@ -10,6 +10,7 @@ target 'Requester' do
   pod 'AlamofireObjectMapper'
   pod 'CYExtensions'
   pod 'CYLocalization'
+  pod 'Firebase/Core'
   pod 'ObjectMapper'
   pod 'PixelPerfectSwift'
   pod 'RxCocoa'
