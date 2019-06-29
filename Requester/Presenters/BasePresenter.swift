@@ -15,6 +15,7 @@ class BasePresenter {
     }
     
     func presenterWillAppear() {
+        
     }
     
     func presenterDidAppeared() {

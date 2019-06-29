@@ -24,6 +24,7 @@ class MemberListItemCell: UITableViewCell {
     @IBOutlet weak var borderedImageView: BorderedImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var moralPercentLabel: UILabel!
+    @IBOutlet weak var seperatorView: UIView!
     
     // MARK: - let variables
     
@@ -93,6 +94,9 @@ extension MemberListItemCell: ComponentDesigning {
     func addColors() {
         self.nameLabel.theme.textColor = themed {
             $0.primaryTextColor
+        }
+        self.seperatorView.theme.backgroundColor = themed {
+            $0.dividerGray
         }
     }
     

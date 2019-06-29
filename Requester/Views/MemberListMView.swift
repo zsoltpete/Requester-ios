@@ -22,8 +22,9 @@ class MemberListMView: UIView {
         self.initTableView()
     }
     
-    func initTableView() {
+    private func initTableView() {
         self.tableView.rowHeight = 60.0
+        self.tableView.applyFakeHeader()
         self.registerCells()
         self.tableView.delegate = nil
         self.tableView.dataSource = nil

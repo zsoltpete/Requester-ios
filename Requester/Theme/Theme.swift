@@ -18,6 +18,7 @@ protocol Theme {
     var borderedImageBorderColor: UIColor { get }
     var lowPercentColor: UIColor { get }
     var highPercentColor: UIColor { get }
+    var dividerGray: UIColor { get }
 }
 
 struct LightTheme: Theme {
@@ -26,6 +27,7 @@ struct LightTheme: Theme {
     let borderedImageBorderColor = Colors.BorderedImageBorderColor.light
     let lowPercentColor = Colors.LowPercentColor.light
     let highPercentColor = Colors.HighPercentColor.light
+    var dividerGray = Colors.DividerColor.light
 }
 
 struct DarkTheme: Theme {
@@ -34,6 +36,7 @@ struct DarkTheme: Theme {
     let borderedImageBorderColor = Colors.BorderedImageBorderColor.dark
     let lowPercentColor = Colors.LowPercentColor.dark
     let highPercentColor = Colors.HighPercentColor.dark
+    var dividerGray = Colors.DividerColor.dark
 }
 
 enum ThemeType: ThemeProvider {

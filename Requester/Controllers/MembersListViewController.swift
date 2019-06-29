@@ -20,7 +20,7 @@ class MembersListViewController: BaseViewController {
         let viewModel = MemberListViewModel(service: service)
         presenter = MemberListMViewPresenter(view: self.masterView, viewModel: viewModel)
         presenter?.presenterDidLoad()
-        
+        self.setControllerTitle("Members")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,5 +41,11 @@ class MembersListViewController: BaseViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         presenter?.presenterDidDisappear()
+    }
+    
+    func setControllerTitle(_ title: String) {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
+        self.title = title
     }
 }
