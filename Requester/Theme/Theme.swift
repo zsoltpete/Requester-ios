@@ -15,19 +15,25 @@ import UIKit
 protocol Theme {
     var backgroundColor: UIColor { get }
     var primaryTextColor: UIColor { get }
-    var secondaryTextColor: UIColor { get }
+    var borderedImageBorderColor: UIColor { get }
+    var lowPercentColor: UIColor { get }
+    var highPercentColor: UIColor { get }
 }
 
 struct LightTheme: Theme {
     let backgroundColor = Colors.BackGroundColor.light
     let primaryTextColor = Colors.PrimaryTextColor.light
-    let secondaryTextColor = Colors.SecondaryTextColor.light
+    let borderedImageBorderColor = Colors.BorderedImageBorderColor.light
+    let lowPercentColor = Colors.LowPercentColor.light
+    let highPercentColor = Colors.HighPercentColor.light
 }
 
 struct DarkTheme: Theme {
     let backgroundColor = Colors.BackGroundColor.dark
     let primaryTextColor = Colors.PrimaryTextColor.dark
-    let secondaryTextColor = Colors.SecondaryTextColor.dark
+    let borderedImageBorderColor = Colors.BorderedImageBorderColor.dark
+    let lowPercentColor = Colors.LowPercentColor.dark
+    let highPercentColor = Colors.HighPercentColor.dark
 }
 
 enum ThemeType: ThemeProvider {

@@ -22,8 +22,6 @@ extension BaseViewController: Routable {
     
     public enum StoryboardIdentifier: String {
         case main = "Main"
-        case login = "Login"
-        case kyc = "KYC"
     }
     
 }
