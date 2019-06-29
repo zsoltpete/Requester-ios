@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1671.2" y="-185.75712143928038"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar Controller-->
         <scene sceneID="swh-tN-REF">
             <objects>
-                <tabBarController id="U2u-WL-OFH" sceneMemberID="viewController">
+                <tabBarController id="U2u-WL-OFH" customClass="BaseTabBarController" customModule="Requester" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9LV-fd-dKp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
