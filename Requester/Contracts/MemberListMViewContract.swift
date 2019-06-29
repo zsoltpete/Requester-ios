@@ -10,4 +10,7 @@ import Foundation
 
 protocol MemberListMViewContract: BaseTableViewContract {
     
+    ///Update tableview with models
+    func updateList(_ model: [MemberListItemCellBindable])
+    
 }

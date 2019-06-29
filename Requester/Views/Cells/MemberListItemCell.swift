@@ -50,6 +50,7 @@ class MemberListItemCell: UITableViewCell {
         self.borderedImageView.loadImageUrl(model.pImageSrc)
         self.nameLabel.text = model.pName
         self.moralPercentLabel.text = model.pMoralPercent.toPercentedString()
+        self.colorizeMoralPercent(model.pMoralPercent)
     }
     
     private func colorizeMoralPercent(_ percent: Int) {
@@ -90,7 +91,8 @@ extension MemberListItemCell: ComponentDesigning {
     }
     
     func addColors() {
-        self.nameLabel.layer.theme.borderColor = themed { $0.primaryTextColor.cgColor
+        self.nameLabel.theme.textColor = themed {
+            $0.primaryTextColor
         }
     }
     

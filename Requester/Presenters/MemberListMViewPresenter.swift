@@ -7,15 +7,40 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 class MemberListMViewPresenter: BasePresenter {
     
-    init(view: MemberListMViewContract, viewModel: ) {
+    let disposeBag = DisposeBag()
+    
+    private var view: MemberListMViewContract
+    private var viewModel: MemberListViewModel
+    
+    init(view: MemberListMViewContract, viewModel: MemberListViewModel) {
         self.viewModel = viewModel
         self.view = view
         super.init()
-        self.addRandomButtonAction()
         self.initSubscriptions()
+    }
+    
+    override func presenterWillAppear() {
+        super.presenterWillAppear()
+        self.viewModel.fetch()
+    }
+    
+    private func initSubscriptions() {
+        self.viewModel.viewState.subscribe(onNext: { [weak self]value in
+            self?.handleViewState(value)
+        }).disposed(by: disposeBag)
+    }
+    
+}
+
+extension MemberListMViewPresenter: Presentable {
+    
+    func handleViewState(_ state: [MemberListItemCellBindable]) {
+        self.view.updateList(state)
     }
     
 }

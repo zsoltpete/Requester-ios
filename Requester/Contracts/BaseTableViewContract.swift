@@ -10,11 +10,6 @@ import Foundation
 
 protocol BaseTableViewContract {
     
-    associatedtype DataSourceItem: Any
-    
-    ///Update tableview with models
-    func updateList(_ model: [DataSourceItem])
-    
     ///Register cells to tableview
-    func registerCoctailCell()
+    func registerCells()
 }

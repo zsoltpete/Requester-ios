@@ -13,15 +13,21 @@ import RxSwift
 class MemberListViewModel {
     
     private let disposeBag = DisposeBag()
-    var viewState = BehaviorRelay<[Any]>(value: [])
+    var viewState = BehaviorRelay<[MemberListItemCellBindable]>(value: [])
     private var service: MemberListService
     
     init(service: MemberListService) {
         self.service = service
     }
     
-    func updateViewState(_ model: [Any]) {
+    func updateViewState(_ model: [MemberListItemCellBindable]) {
         self.viewState.accept(model)
+    }
+    
+    func fetch() {
+        self.service.fetchAllUser().subscribe(onSuccess: { [weak self]response in
+            self?.updateViewState(response)
+        }).disposed(by: disposeBag)
     }
     
 }

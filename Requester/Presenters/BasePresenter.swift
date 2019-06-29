@@ -15,10 +15,9 @@ class BasePresenter {
     }
     
     func presenterWillAppear() {
-        
     }
     
-    func presenterDidLoaded() {
+    func presenterDidAppeared() {
         
     }
     

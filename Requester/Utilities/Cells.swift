@@ -11,6 +11,6 @@ import Foundation
 /// Contains cell identifiers
 struct Cells {
     
-    static let Cell = "Cell"
+    static let MemberListItemCell = "MemberListItemCell"
     
 }

@@ -19,7 +19,7 @@ struct Colors {
     static let BackGroundColor = MixedColor(light: .white, dark: .black)
     static let PrimaryTextColor = MixedColor(light: Colors.mainBlue, dark: Colors.mainBlue)
     static let BorderedImageBorderColor = MixedColor(light: Colors.mainBlue, dark: Colors.mainBlue)
-    static let LowPercentColor = MixedColor(light: Colors.mainBlue, dark: Colors.mainBlue)
-    static let HighPercentColor = MixedColor(light: Colors.mainBlue, dark: Colors.mainBlue)
+    static let LowPercentColor = MixedColor(light: Colors.mainRed, dark: Colors.mainRed)
+    static let HighPercentColor = MixedColor(light: Colors.mainGreen, dark: Colors.mainGreen)
     
 }
