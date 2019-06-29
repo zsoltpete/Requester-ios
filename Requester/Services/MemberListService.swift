@@ -9,42 +9,15 @@
 import CYExtensions
 import FirebaseDatabase
 import Foundation
+import ObjectMapper
 import RxCocoa
 import RxSwift
+import SwiftyJSON
 
-class MemberListService: DataServiceProvider {
-    
-    var ref: DatabaseReference
-    
-    override init() {
-        ref = Database.database().reference()
-        super.init()
-    }
+class MemberListService: FirDataServiceProvider {
     
     func fetchAllUser() -> Single<[User]> {
-        return Single<[User]>.create { [weak self]single in
-            self?.ref.child("users").observeSingleEvent(of: .value, with: { snapshot in
-                var users = [User]()
-                guard let dictValue = snapshot.value as? NSDictionary else {
-                    return
-                }
-                for (_, value) in dictValue {
-                    guard let dict = value as? [String: Any] else {
-                        return
-                    }
-                    guard let user = User(JSON: dict) else {
-                        return
-                    }
-                    users.append(user)
-                }
-                single(.success(users))
-            }) { error in
-                Log.error(error.localizedDescription)
-                single(.error(error))
-            }
-            return Disposables.create()
-        }
-        
+        return self.firRequest(endPoint: "users")
     }
     
 }
