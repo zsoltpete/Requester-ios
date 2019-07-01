@@ -1,8 +1,8 @@
 //
-//  User.swift
+//  MoralListItem.swift
 //  Requester
 //
-//  Created by Zsolt Pete on 2019. 06. 29..
+//  Created by Zsolt Pete on 2019. 07. 01..
 //  Copyright © 2019. Zsolt Pete. All rights reserved.
 //
 //swiftlint:disable force_unwrapping
@@ -10,41 +10,42 @@
 import Foundation
 import ObjectMapper
 
-class User: BaseResponse, Encodable {
+class MoralListItem: BaseResponse, Encodable {
     
     var name: String?
-    var imageSrc: String?
-    var moralPercent: Int?
-    var moralId: String?
-    var moralList: [MoralListItem]?
+    var icon: String?
+    var value: Int?
+    
+    init(category: Category, value: Int?) {
+        super.init()!
+        self.name = category.name
+        self.icon = category.icon
+        self.value = value
+        
+    }
     
     required init?(map: Map) {
         super.init(map: map)
     }
     
-    override init() {
-        super.init()!
+    override init?() {
+        super.init()
     }
     
     override func mapping(map: Map) {
         super.mapping(map: map)
-        id <- map["id"]
-        name <- map["name"]
-        imageSrc <- map["image_src"]
-        moralPercent <- map["moral_value"]
-        moralId <- map["moral_id"]
     }
     
 }
 
-extension User: MoralledItemCellBindable {
+extension MoralListItem: MoralledItemCellBindable {
     
     var pId: String {
         return self.id
     }
     
     var pImageSrc: String {
-        return self.imageSrc ?? ""
+        return self.icon ?? ""
     }
     
     var pName: String {
@@ -52,6 +53,7 @@ extension User: MoralledItemCellBindable {
     }
     
     var pMoralPercent: Int {
-        return self.moralPercent ?? 0
+        return self.value ?? 0
     }
+    
 }

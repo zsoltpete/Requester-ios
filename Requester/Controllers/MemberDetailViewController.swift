@@ -20,6 +20,7 @@ class MemberDetailViewController: BaseViewController {
         let service = MemberDetailService()
         let viewModel = MemberDetailViewModel(service: service)
         presenter = MemberDetailViewPresenter(view: masterView, viewModel: viewModel, userId: self.userId)
+        presenter?.presenterDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {

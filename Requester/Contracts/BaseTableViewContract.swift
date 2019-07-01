@@ -12,4 +12,7 @@ protocol BaseTableViewContract {
     
     ///Register cells to tableview
     func registerCells()
+    
+    ///Initialize TableView
+    func initTableView()
 }

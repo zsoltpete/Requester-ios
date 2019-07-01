@@ -27,6 +27,11 @@ class MemberDetailViewPresenter: BasePresenter {
         self.initSubscriptions()
     }
     
+    override func presenterDidLoad() {
+        super.presenterDidLoad()
+        self.view.bindRequestButton("MemberDetail.RequestButton.Title".localized)
+    }
+    
     override func presenterWillAppear() {
         super.presenterWillAppear()
         self.viewModel.fetch(userId: userId)
@@ -43,7 +48,7 @@ class MemberDetailViewPresenter: BasePresenter {
 extension MemberDetailViewPresenter: Presentable {
     
     func handleViewState(_ state: User) {
-        self.view.updateMoralList("MemberDetail.SectionHeader.Title".localized, dataSource: [])
+        self.view.updateMoralList("MemberDetail.SectionHeader.Title".localized, dataSource: state.moralList ?? [])
         self.view.setTeamName(state.pName)
         self.view.setProfileImageView(state.pImageSrc)
     }

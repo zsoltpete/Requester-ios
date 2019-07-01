@@ -88,3 +88,11 @@ extension RButton: ComponentsScaling {
     }
     
 }
+
+extension RButton: RButtonContract {
+    
+    func setButtonTitle(_ title: String) {
+        self.button.setTitle(title, for: .normal)
+    }
+    
+}

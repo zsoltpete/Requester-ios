@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -116,6 +115,7 @@
                             <outlet property="profileImageView" destination="yOc-4X-47O" id="SB6-VE-xBf"/>
                             <outlet property="profileImageViewTopConstraint" destination="FGv-qu-D3z" id="om8-LF-KPy"/>
                             <outlet property="requestButton" destination="lXo-4L-RUe" id="dzN-PR-LRd"/>
+                            <outlet property="sendButtonHeightConstraint" destination="Ibg-ip-Ugp" id="Cu2-hR-uDG"/>
                             <outlet property="teamLabel" destination="MPO-3D-Cpl" id="wdP-Y1-CEH"/>
                             <outlet property="teamLabelBottomConstraint" destination="pWP-zv-iNl" id="UDs-lM-KNg"/>
                             <outlet property="teamLabelTopConstraint" destination="Got-wH-fbY" id="NXT-ji-8uu"/>
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyC-SL-u8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="-184"/>
+            <point key="canvasLocation" x="2476" y="-184.85757121439281"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="swh-tN-REF">

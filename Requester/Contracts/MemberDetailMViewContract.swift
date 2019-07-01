@@ -19,4 +19,7 @@ protocol MemberDetailMViewContract {
     ///Update List items and section header
     func updateMoralList(_ sectionTitle: String, dataSource: [MoralledItemCellBindable])
     
+    //Bind Send button
+    func bindRequestButton(_ title: String)
+    
 }

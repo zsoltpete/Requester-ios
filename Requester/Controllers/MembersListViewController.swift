@@ -45,8 +45,8 @@ class MembersListViewController: BaseViewController {
     }
     
     func setControllerTitle(_ title: String) {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
         self.title = title
     }
     

@@ -6,6 +6,7 @@
 //  Copyright © 2019. Zsolt Pete. All rights reserved.
 //
 
+import PixelPerfectSwift
 import Firebase
 import UIKit
 
@@ -26,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        ScaleFactor.shared.setScaleFactorDevice(.iPhone8)
+        CategoryStore.shared.fetchCategories()
         return true
     }
 

@@ -25,17 +25,6 @@ class MemberListMView: UIView {
         self.initTableView()
     }
     
-    private func initTableView() {
-        self.tableView.rowHeight = 60.0
-        self.tableView.applyFakeHeader()
-        self.registerCells()
-        self.tableView.delegate = nil
-        self.tableView.dataSource = nil
-        self.tableView.rx.modelSelected(MoralledItemCellBindable.self).subscribe(onNext: { [weak self]model in
-            self?.selectionAction?(model)
-        }).disposed(by: disposeBag)
-    }
-    
 }
 
 extension MemberListMView: MemberListMViewContract {
@@ -54,6 +43,17 @@ extension MemberListMView: MemberListMViewContract {
     
     func setDidSelectionAction(_ action: MoralledItemActionCompletition?) {
         self.selectionAction = action
+    }
+    
+    func initTableView() {
+        self.tableView.rowHeight = 60.0
+        self.tableView.applyFakeHeader()
+        self.registerCells()
+        self.tableView.delegate = nil
+        self.tableView.dataSource = nil
+        self.tableView.rx.modelSelected(MoralledItemCellBindable.self).subscribe(onNext: { [weak self]model in
+            self?.selectionAction?(model)
+        }).disposed(by: disposeBag)
     }
     
 }

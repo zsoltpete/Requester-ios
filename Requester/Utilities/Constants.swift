@@ -9,6 +9,8 @@
 import Foundation
 
 /// Contains constants of the app
-struct Constants {
-    
+struct CategoryIds {
+    static let Help = "help"
+    static let CodeReview = "code_review"
+    static let meetings = "Meetings"
 }

@@ -73,11 +73,23 @@ class MoralListView: UIView {
     
     func initialize() {
         self.loadXib()
+        self.initTableView()
+        self.registerCells()
     }
 
 }
 
 extension MoralListView: MoralListViewContract {
+    
+    func initTableView() {
+        self.tableView.dataSource = self.dataSource
+        self.tableView.delegate = self.dataSource
+        self.tableView.rowHeight = 60.0.pps
+        self.tableView.theme.backgroundColor = themed {
+            $0.backgroundColor
+        }
+        self.tableView.applyFakeHeader()
+    }
     
     func setSectionHeaderTitle(_ title: String) {
         self.sectionHeaderView.setTitle(title)
@@ -85,6 +97,7 @@ extension MoralListView: MoralListViewContract {
     
     func updateList(_ model: [MoralledItemCellBindable]) {
         self.dataSource.setDataSource(model)
+        self.tableView.reloadData()
     }
     
     func registerCells() {

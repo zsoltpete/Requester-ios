@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5425856922CA6455002E0E8A /* MoralItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856822CA6455002E0E8A /* MoralItem.swift */; };
+		5425856B22CA697D002E0E8A /* MoralListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856A22CA697D002E0E8A /* MoralListItem.swift */; };
+		5425856D22CA69BE002E0E8A /* MoralListItemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856C22CA69BE002E0E8A /* MoralListItemHelper.swift */; };
+		5425856F22CA69DE002E0E8A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856E22CA69DE002E0E8A /* Category.swift */; };
+		5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857122CA6D70002E0E8A /* CategoryStore.swift */; };
+		5425857422CA6DAF002E0E8A /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857322CA6DAF002E0E8A /* CategoryService.swift */; };
+		5425857622CA7852002E0E8A /* RButtonContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857522CA7852002E0E8A /* RButtonContract.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -89,6 +96,13 @@
 
 /* Begin PBXFileReference section */
 		29EEA33E2017E1B1EDA4A2FE /* Pods-Requester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Requester.release.xcconfig"; path = "Target Support Files/Pods-Requester/Pods-Requester.release.xcconfig"; sourceTree = "<group>"; };
+		5425856822CA6455002E0E8A /* MoralItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralItem.swift; sourceTree = "<group>"; };
+		5425856A22CA697D002E0E8A /* MoralListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListItem.swift; sourceTree = "<group>"; };
+		5425856C22CA69BE002E0E8A /* MoralListItemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListItemHelper.swift; sourceTree = "<group>"; };
+		5425856E22CA69DE002E0E8A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		5425857122CA6D70002E0E8A /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStore.swift; sourceTree = "<group>"; };
+		5425857322CA6DAF002E0E8A /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		5425857522CA7852002E0E8A /* RButtonContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RButtonContract.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -191,6 +205,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5425857022CA6D5F002E0E8A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5425857122CA6D70002E0E8A /* CategoryStore.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		54FD52EB22C5E66600FCBAE8 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +236,7 @@
 		54FD52F722C5E66600FCBAE8 /* Requester */ = {
 			isa = PBXGroup;
 			children = (
+				5425857022CA6D5F002E0E8A /* Managers */,
 				54FD530022C5E66600FCBAE8 /* Controllers */,
 				54FD535922C7AC9800FCBAE8 /* Contracts */,
 				54FD530322C5E66600FCBAE8 /* Models */,
@@ -251,6 +274,7 @@
 				54FD533722C5E6B800FCBAE8 /* Fonts.swift */,
 				54FD533422C5E6B700FCBAE8 /* Numbers.swift */,
 				54FD533522C5E6B700FCBAE8 /* UserDefaultManager.swift */,
+				5425856C22CA69BE002E0E8A /* MoralListItemHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -282,6 +306,9 @@
 			children = (
 				54FD534A22C5E6D200FCBAE8 /* BaseResponse.swift */,
 				54FD538722C7C39800FCBAE8 /* User.swift */,
+				5425856822CA6455002E0E8A /* MoralItem.swift */,
+				5425856A22CA697D002E0E8A /* MoralListItem.swift */,
+				5425856E22CA69DE002E0E8A /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +360,7 @@
 				54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */,
 				54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */,
 				54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */,
+				5425857522CA7852002E0E8A /* RButtonContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -394,6 +422,7 @@
 				54FD538922C7CFF800FCBAE8 /* FirDataServiceProvider.swift */,
 				54FD538022C7BCED00FCBAE8 /* MemberListService.swift */,
 				54FD53B822C8C0DF00FCBAE8 /* MemberDetailService.swift */,
+				5425857322CA6DAF002E0E8A /* CategoryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -638,6 +667,7 @@
 				54FD536522C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift in Sources */,
 				54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */,
 				54FD534922C5E6CA00FCBAE8 /* BaseViewController.swift in Sources */,
+				5425857422CA6DAF002E0E8A /* CategoryService.swift in Sources */,
 				54FD537B22C7BB1C00FCBAE8 /* BasePresenter.swift in Sources */,
 				54FD533A22C5E6B800FCBAE8 /* Enums.swift in Sources */,
 				54FD534622C5E6C100FCBAE8 /* RouteIdentifiable.swift in Sources */,
@@ -647,6 +677,7 @@
 				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
 				54FD537522C7B95000FCBAE8 /* Int+Modifications.swift in Sources */,
 				54FD536F22C7B49500FCBAE8 /* UIImageView+ImageDownload.swift in Sources */,
+				5425856D22CA69BE002E0E8A /* MoralListItemHelper.swift in Sources */,
 				54FD53A222C8B79D00FCBAE8 /* SectionHeaderViewContract.swift in Sources */,
 				54FD539622C8B2BC00FCBAE8 /* UIButton+Modifiers.swift in Sources */,
 				54FD535D22C7ACFD00FCBAE8 /* BaseTableViewContract.swift in Sources */,
@@ -655,6 +686,7 @@
 				54FD535522C7AB4500FCBAE8 /* MembersListViewController.swift in Sources */,
 				54FD536C22C7B40400FCBAE8 /* BorderedImageViewContract.swift in Sources */,
 				54FD539A22C8B49C00FCBAE8 /* MoralListView.swift in Sources */,
+				5425857622CA7852002E0E8A /* RButtonContract.swift in Sources */,
 				54FD538422C7BD1200FCBAE8 /* DataServiceProvider.swift in Sources */,
 				54FD538822C7C39800FCBAE8 /* User.swift in Sources */,
 				54FD534F22C5E6DA00FCBAE8 /* Colors.swift in Sources */,
@@ -664,6 +696,7 @@
 				54FD53BB22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift in Sources */,
 				54FD538A22C7CFF800FCBAE8 /* FirDataServiceProvider.swift in Sources */,
 				54FD535B22C7ACAD00FCBAE8 /* MemberListMViewContract.swift in Sources */,
+				5425856F22CA69DE002E0E8A /* Category.swift in Sources */,
 				54FD535122C5E6DA00FCBAE8 /* MixedColor.swift in Sources */,
 				54FD537F22C7BCBF00FCBAE8 /* MemberListViewModel.swift in Sources */,
 				54FD53BD22C8CA9A00FCBAE8 /* IdentificableModel.swift in Sources */,
@@ -672,11 +705,14 @@
 				54FD53A022C8B61800FCBAE8 /* UILabel+Modifiers.swift in Sources */,
 				54FD53B322C8BD5100FCBAE8 /* MemberDetailMViewContract.swift in Sources */,
 				54FD53AF22C8BAF000FCBAE8 /* MoralListDataSource.swift in Sources */,
+				5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */,
+				5425856B22CA697D002E0E8A /* MoralListItem.swift in Sources */,
 				54FD538E22C8038800FCBAE8 /* BaseTabBarController.swift in Sources */,
 				54FD534122C5E6B800FCBAE8 /* EndPoints.swift in Sources */,
 				54FD533F22C5E6B800FCBAE8 /* FontDeliver.swift in Sources */,
 				54FD534022C5E6B800FCBAE8 /* Fonts.swift in Sources */,
 				54FD533E22C5E6B800FCBAE8 /* UserDefaultManager.swift in Sources */,
+				5425856922CA6455002E0E8A /* MoralItem.swift in Sources */,
 				54FD534522C5E6C100FCBAE8 /* AppStoryboard.swift in Sources */,
 				54FD537322C7B90700FCBAE8 /* String+Modifications.swift in Sources */,
 				54FD535022C5E6DA00FCBAE8 /* Theme.swift in Sources */,
