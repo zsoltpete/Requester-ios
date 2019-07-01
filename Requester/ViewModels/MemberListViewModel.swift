@@ -13,14 +13,14 @@ import RxSwift
 class MemberListViewModel {
     
     private let disposeBag = DisposeBag()
-    var viewState = BehaviorRelay<[MemberListItemCellBindable]>(value: [])
+    var viewState = BehaviorRelay<[MoralledItemCellBindable]>(value: [])
     private var service: MemberListService
     
     init(service: MemberListService) {
         self.service = service
     }
     
-    func updateViewState(_ model: [MemberListItemCellBindable]) {
+    func updateViewState(_ model: [MoralledItemCellBindable]) {
         self.viewState.accept(model)
     }
     

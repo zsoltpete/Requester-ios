@@ -10,9 +10,17 @@ import UIKit
 
 /// Deliver fonts which app can use
 class FontDeliver {
- 
-    static func arial(sizeOf: CGFloat) -> UIFont {
-        return UIFont(name: Fonts.Arial.Regular, size: sizeOf) ?? UIFont()
+    
+    static func system(sizeOf: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: sizeOf)
+    }
+    
+    static func semiBoldSystem(sizeOf: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: sizeOf, weight: .semibold)
+    }
+    
+    static func boldSystem(sizeOf: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: sizeOf, weight: .bold)
     }
     
 }

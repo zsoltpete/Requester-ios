@@ -19,6 +19,8 @@ protocol Theme {
     var lowPercentColor: UIColor { get }
     var highPercentColor: UIColor { get }
     var dividerGray: UIColor { get }
+    var buttonBackgroundColor: UIColor { get }
+    var buttonBorderColor: UIColor { get }
 }
 
 struct LightTheme: Theme {
@@ -28,6 +30,8 @@ struct LightTheme: Theme {
     let lowPercentColor = Colors.LowPercentColor.light
     let highPercentColor = Colors.HighPercentColor.light
     var dividerGray = Colors.DividerColor.light
+    var buttonBorderColor = Colors.RButtonBorderColor.light
+    var buttonBackgroundColor = Colors.RButtonBackgroundColor.light
 }
 
 struct DarkTheme: Theme {
@@ -37,6 +41,8 @@ struct DarkTheme: Theme {
     let lowPercentColor = Colors.LowPercentColor.dark
     let highPercentColor = Colors.HighPercentColor.dark
     var dividerGray = Colors.DividerColor.dark
+    var buttonBorderColor = Colors.RButtonBorderColor.dark
+    var buttonBackgroundColor = Colors.RButtonBackgroundColor.dark
 }
 
 enum ThemeType: ThemeProvider {

@@ -11,6 +11,9 @@ import Foundation
 protocol MemberListMViewContract: BaseTableViewContract {
     
     ///Update tableview with models
-    func updateList(_ model: [MemberListItemCellBindable])
+    func updateList(_ model: [MoralledItemCellBindable])
+    
+    ///Did selection of tableview cell
+    func setDidSelectionAction(_ action: MoralledItemActionCompletition?)
     
 }

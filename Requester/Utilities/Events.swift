@@ -12,6 +12,6 @@ import Foundation
 struct Events {
     
     //It is just a fake notification to know of notification name struct
-    static let Start = Notification.Name(rawValue: "Start")
+    static let ShowMemberDetailView = Notification.Name(rawValue: "ShowMemberDetailView")
     
 }

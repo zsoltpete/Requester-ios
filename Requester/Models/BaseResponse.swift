@@ -9,14 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class BaseResponse: Mappable {
+class BaseResponse: Mappable, IdentificableModel {
+    
+    var id: String
     
     required init?(map: Map) {
-        
+        self.id = ""
     }
     
     init?() {
-        
+       self.id = ""
     }
     
     func mapping(map: Map) {

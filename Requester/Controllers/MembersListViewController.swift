@@ -21,6 +21,7 @@ class MembersListViewController: BaseViewController {
         presenter = MemberListMViewPresenter(view: self.masterView, viewModel: viewModel)
         presenter?.presenterDidLoad()
         self.setControllerTitle("Members")
+        self.initNotifications()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,4 +49,26 @@ class MembersListViewController: BaseViewController {
         self.navigationController?.navigationItem.largeTitleDisplayMode = .always
         self.title = title
     }
+    
+    func initNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(showMemberDetailView), name: Events.ShowMemberDetailView, object: nil)
+    }
+    
+    @objc
+    private func showMemberDetailView(_ notification: Notification) {
+        guard let userId = notification.object as? String else {
+            return
+        }
+        
+        self.show(classType: MemberDetailViewController.self) { (controller: MemberDetailViewController) in
+            controller.setUserId(userId)
+        }
+    }
+}
+
+extension MembersListViewController: RouteIdentifiable {
+    static var storyboardName: BaseViewController.StoryboardIdentifier {
+        return .main
+    }
+    
 }

@@ -54,11 +54,80 @@
                     <navigationItem key="navigationItem" id="tS0-fz-PbU"/>
                     <connections>
                         <outlet property="masterView" destination="Zrn-Hs-dVd" id="UHv-yJ-oTX"/>
+                        <segue destination="hJh-Kl-e5I" kind="show" id="ZvL-3H-JYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSe-PI-Cjs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1671.2" y="-185.75712143928038"/>
+        </scene>
+        <!--Member Detail View Controller-->
+        <scene sceneID="TWC-xm-2Id">
+            <objects>
+                <viewController storyboardIdentifier="MemberDetailViewController" id="hJh-Kl-e5I" customClass="MemberDetailViewController" customModule="Requester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mja-hC-0uE" customClass="MemberDetailMView" customModule="Requester" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOc-4X-47O" customClass="BorderedImageView" customModule="Requester" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="80" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yOc-4X-47O" secondAttribute="height" multiplier="1:1" id="C0R-eT-tAL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPO-3D-Cpl">
+                                <rect key="frame" x="0.0" y="323" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0C-F8-e6k" customClass="MoralListView" customModule="Requester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="360" width="375" height="198"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXo-4L-RUe" customClass="RButton" customModule="Requester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ibg-ip-Ugp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yOc-4X-47O" firstAttribute="width" secondItem="mja-hC-0uE" secondAttribute="width" multiplier="200/375" id="6b3-Sd-N6U"/>
+                            <constraint firstItem="yOc-4X-47O" firstAttribute="top" secondItem="YDU-IH-5cP" secondAttribute="top" constant="16" id="FGv-qu-D3z"/>
+                            <constraint firstItem="MPO-3D-Cpl" firstAttribute="top" secondItem="yOc-4X-47O" secondAttribute="bottom" constant="43" id="Got-wH-fbY"/>
+                            <constraint firstItem="MPO-3D-Cpl" firstAttribute="width" secondItem="mja-hC-0uE" secondAttribute="width" id="K0n-9A-IMg"/>
+                            <constraint firstItem="YDU-IH-5cP" firstAttribute="trailing" secondItem="t0C-F8-e6k" secondAttribute="trailing" id="M8w-FT-jcC"/>
+                            <constraint firstItem="yOc-4X-47O" firstAttribute="centerX" secondItem="YDU-IH-5cP" secondAttribute="centerX" id="NLc-3d-3YW"/>
+                            <constraint firstItem="MPO-3D-Cpl" firstAttribute="centerX" secondItem="yOc-4X-47O" secondAttribute="centerX" id="aYe-2l-H2w"/>
+                            <constraint firstItem="lXo-4L-RUe" firstAttribute="leading" secondItem="YDU-IH-5cP" secondAttribute="leading" id="dB6-sJ-47g"/>
+                            <constraint firstItem="t0C-F8-e6k" firstAttribute="leading" secondItem="YDU-IH-5cP" secondAttribute="leading" id="iqr-dX-C5t"/>
+                            <constraint firstItem="YDU-IH-5cP" firstAttribute="trailing" secondItem="lXo-4L-RUe" secondAttribute="trailing" id="m95-Es-ek9"/>
+                            <constraint firstItem="MPO-3D-Cpl" firstAttribute="bottom" secondItem="t0C-F8-e6k" secondAttribute="top" constant="-16" id="pWP-zv-iNl"/>
+                            <constraint firstItem="YDU-IH-5cP" firstAttribute="bottom" secondItem="lXo-4L-RUe" secondAttribute="bottom" id="td6-SY-aCb"/>
+                            <constraint firstItem="lXo-4L-RUe" firstAttribute="top" secondItem="t0C-F8-e6k" secondAttribute="bottom" id="yHX-J7-Um9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YDU-IH-5cP"/>
+                        <connections>
+                            <outlet property="moralListView" destination="t0C-F8-e6k" id="27s-7H-Bzz"/>
+                            <outlet property="profileImageView" destination="yOc-4X-47O" id="SB6-VE-xBf"/>
+                            <outlet property="profileImageViewTopConstraint" destination="FGv-qu-D3z" id="om8-LF-KPy"/>
+                            <outlet property="requestButton" destination="lXo-4L-RUe" id="dzN-PR-LRd"/>
+                            <outlet property="teamLabel" destination="MPO-3D-Cpl" id="wdP-Y1-CEH"/>
+                            <outlet property="teamLabelBottomConstraint" destination="pWP-zv-iNl" id="UDs-lM-KNg"/>
+                            <outlet property="teamLabelTopConstraint" destination="Got-wH-fbY" id="NXT-ji-8uu"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="masterView" destination="mja-hC-0uE" id="4xQ-T0-843"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KyC-SL-u8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="-184"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="swh-tN-REF">

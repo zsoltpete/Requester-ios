@@ -36,9 +36,8 @@
 		54FD535822C7AB9E00FCBAE8 /* MemberListMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD535722C7AB9E00FCBAE8 /* MemberListMView.swift */; };
 		54FD535B22C7ACAD00FCBAE8 /* MemberListMViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD535A22C7ACAD00FCBAE8 /* MemberListMViewContract.swift */; };
 		54FD535D22C7ACFD00FCBAE8 /* BaseTableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD535C22C7ACFD00FCBAE8 /* BaseTableViewContract.swift */; };
-		54FD536322C7AF6C00FCBAE8 /* MemberListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD536022C7AF6C00FCBAE8 /* MemberListItemCell.swift */; };
-		54FD536422C7AF6C00FCBAE8 /* MemberListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD536122C7AF6C00FCBAE8 /* MemberListItemCell.xib */; };
-		54FD536522C7AF6C00FCBAE8 /* MemberListItemCellBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD536222C7AF6C00FCBAE8 /* MemberListItemCellBindable.swift */; };
+		54FD536422C7AF6C00FCBAE8 /* MoralledItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD536122C7AF6C00FCBAE8 /* MoralledItemCell.xib */; };
+		54FD536522C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD536222C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift */; };
 		54FD536822C7AFFE00FCBAE8 /* BorderedImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD536622C7AFFE00FCBAE8 /* BorderedImageView.xib */; };
 		54FD536922C7AFFE00FCBAE8 /* BorderedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD536722C7AFFE00FCBAE8 /* BorderedImageView.swift */; };
 		54FD536C22C7B40400FCBAE8 /* BorderedImageViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD536B22C7B40400FCBAE8 /* BorderedImageViewContract.swift */; };
@@ -56,6 +55,25 @@
 		54FD538A22C7CFF800FCBAE8 /* FirDataServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD538922C7CFF800FCBAE8 /* FirDataServiceProvider.swift */; };
 		54FD538C22C7FE7B00FCBAE8 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD538B22C7FE7B00FCBAE8 /* BaseNavigationController.swift */; };
 		54FD538E22C8038800FCBAE8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD538D22C8038800FCBAE8 /* BaseTabBarController.swift */; };
+		54FD539022C8AE8500FCBAE8 /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD538F22C8AE8500FCBAE8 /* MemberDetailViewController.swift */; };
+		54FD539322C8B06800FCBAE8 /* RButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD539122C8B06800FCBAE8 /* RButton.xib */; };
+		54FD539422C8B06800FCBAE8 /* RButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD539222C8B06800FCBAE8 /* RButton.swift */; };
+		54FD539622C8B2BC00FCBAE8 /* UIButton+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD539522C8B2BC00FCBAE8 /* UIButton+Modifiers.swift */; };
+		54FD539922C8B49C00FCBAE8 /* MoralListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD539722C8B49C00FCBAE8 /* MoralListView.xib */; };
+		54FD539A22C8B49C00FCBAE8 /* MoralListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD539822C8B49C00FCBAE8 /* MoralListView.swift */; };
+		54FD539D22C8B58300FCBAE8 /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */; };
+		54FD539E22C8B58300FCBAE8 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */; };
+		54FD53A022C8B61800FCBAE8 /* UILabel+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD539F22C8B61800FCBAE8 /* UILabel+Modifiers.swift */; };
+		54FD53A222C8B79D00FCBAE8 /* SectionHeaderViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */; };
+		54FD53A422C8B80D00FCBAE8 /* MoralListViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */; };
+		54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53AB22C8B95E00FCBAE8 /* MoralledItemCell.swift */; };
+		54FD53AF22C8BAF000FCBAE8 /* MoralListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53AE22C8BAF000FCBAE8 /* MoralListDataSource.swift */; };
+		54FD53B122C8BD1A00FCBAE8 /* MemberDetailMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */; };
+		54FD53B322C8BD5100FCBAE8 /* MemberDetailMViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */; };
+		54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53B422C8C02800FCBAE8 /* MemberDetailViewModel.swift */; };
+		54FD53B922C8C0DF00FCBAE8 /* MemberDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53B822C8C0DF00FCBAE8 /* MemberDetailService.swift */; };
+		54FD53BB22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53BA22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift */; };
+		54FD53BD22C8CA9A00FCBAE8 /* IdentificableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD53BC22C8CA9A00FCBAE8 /* IdentificableModel.swift */; };
 		DE1CA30CE7907440E92E5D11 /* Pods_Requester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 865D082D4FBB7942A83E4901 /* Pods_Requester.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,9 +122,8 @@
 		54FD535722C7AB9E00FCBAE8 /* MemberListMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListMView.swift; sourceTree = "<group>"; };
 		54FD535A22C7ACAD00FCBAE8 /* MemberListMViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListMViewContract.swift; sourceTree = "<group>"; };
 		54FD535C22C7ACFD00FCBAE8 /* BaseTableViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewContract.swift; sourceTree = "<group>"; };
-		54FD536022C7AF6C00FCBAE8 /* MemberListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListItemCell.swift; sourceTree = "<group>"; };
-		54FD536122C7AF6C00FCBAE8 /* MemberListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberListItemCell.xib; sourceTree = "<group>"; };
-		54FD536222C7AF6C00FCBAE8 /* MemberListItemCellBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListItemCellBindable.swift; sourceTree = "<group>"; };
+		54FD536122C7AF6C00FCBAE8 /* MoralledItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoralledItemCell.xib; sourceTree = "<group>"; };
+		54FD536222C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralledItemCellBindable.swift; sourceTree = "<group>"; };
 		54FD536622C7AFFE00FCBAE8 /* BorderedImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorderedImageView.xib; sourceTree = "<group>"; };
 		54FD536722C7AFFE00FCBAE8 /* BorderedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedImageView.swift; sourceTree = "<group>"; };
 		54FD536B22C7B40400FCBAE8 /* BorderedImageViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedImageViewContract.swift; sourceTree = "<group>"; };
@@ -124,6 +141,25 @@
 		54FD538922C7CFF800FCBAE8 /* FirDataServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirDataServiceProvider.swift; sourceTree = "<group>"; };
 		54FD538B22C7FE7B00FCBAE8 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		54FD538D22C8038800FCBAE8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		54FD538F22C8AE8500FCBAE8 /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		54FD539122C8B06800FCBAE8 /* RButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RButton.xib; sourceTree = "<group>"; };
+		54FD539222C8B06800FCBAE8 /* RButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RButton.swift; sourceTree = "<group>"; };
+		54FD539522C8B2BC00FCBAE8 /* UIButton+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Modifiers.swift"; sourceTree = "<group>"; };
+		54FD539722C8B49C00FCBAE8 /* MoralListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoralListView.xib; sourceTree = "<group>"; };
+		54FD539822C8B49C00FCBAE8 /* MoralListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListView.swift; sourceTree = "<group>"; };
+		54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		54FD539F22C8B61800FCBAE8 /* UILabel+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Modifiers.swift"; sourceTree = "<group>"; };
+		54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewContract.swift; sourceTree = "<group>"; };
+		54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListViewContract.swift; sourceTree = "<group>"; };
+		54FD53AB22C8B95E00FCBAE8 /* MoralledItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoralledItemCell.swift; sourceTree = "<group>"; };
+		54FD53AE22C8BAF000FCBAE8 /* MoralListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListDataSource.swift; sourceTree = "<group>"; };
+		54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailMView.swift; sourceTree = "<group>"; };
+		54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailMViewContract.swift; sourceTree = "<group>"; };
+		54FD53B422C8C02800FCBAE8 /* MemberDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewModel.swift; sourceTree = "<group>"; };
+		54FD53B822C8C0DF00FCBAE8 /* MemberDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberDetailService.swift; sourceTree = "<group>"; };
+		54FD53BA22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewPresenter.swift; sourceTree = "<group>"; };
+		54FD53BC22C8CA9A00FCBAE8 /* IdentificableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificableModel.swift; sourceTree = "<group>"; };
 		865D082D4FBB7942A83E4901 /* Pods_Requester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Requester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9304F05A5995EFDC6EA9A941 /* Pods-Requester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Requester.debug.xcconfig"; path = "Target Support Files/Pods-Requester/Pods-Requester.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +221,7 @@
 				54FD538222C7BCFF00FCBAE8 /* Services */,
 				54FD535622C7AB7D00FCBAE8 /* Views */,
 				54FD537D22C7BCAB00FCBAE8 /* ViewModels */,
+				54FD53AD22C8BADA00FCBAE8 /* DataSources */,
 				54FD52FD22C5E66600FCBAE8 /* Routing */,
 				54FD52FA22C5E66600FCBAE8 /* Utilities */,
 				54FD530622C5E66600FCBAE8 /* Theme */,
@@ -235,6 +272,7 @@
 				54FD538B22C7FE7B00FCBAE8 /* BaseNavigationController.swift */,
 				54FD538D22C8038800FCBAE8 /* BaseTabBarController.swift */,
 				54FD535422C7AB4500FCBAE8 /* MembersListViewController.swift */,
+				54FD538F22C8AE8500FCBAE8 /* MemberDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -274,6 +312,13 @@
 				54FD535722C7AB9E00FCBAE8 /* MemberListMView.swift */,
 				54FD536622C7AFFE00FCBAE8 /* BorderedImageView.xib */,
 				54FD536722C7AFFE00FCBAE8 /* BorderedImageView.swift */,
+				54FD539122C8B06800FCBAE8 /* RButton.xib */,
+				54FD539222C8B06800FCBAE8 /* RButton.swift */,
+				54FD539722C8B49C00FCBAE8 /* MoralListView.xib */,
+				54FD539822C8B49C00FCBAE8 /* MoralListView.swift */,
+				54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */,
+				54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */,
+				54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +330,9 @@
 				54FD535A22C7ACAD00FCBAE8 /* MemberListMViewContract.swift */,
 				54FD536B22C7B40400FCBAE8 /* BorderedImageViewContract.swift */,
 				54FD537022C7B4D100FCBAE8 /* MemberListItemCellContract.swift */,
+				54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */,
+				54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */,
+				54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -292,8 +340,9 @@
 		54FD535E22C7AEA400FCBAE8 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				54FD537622C7BAD100FCBAE8 /* MemberListMViewPresenter.swift */,
 				54FD537A22C7BB1C00FCBAE8 /* BasePresenter.swift */,
+				54FD537622C7BAD100FCBAE8 /* MemberListMViewPresenter.swift */,
+				54FD53BA22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -301,9 +350,9 @@
 		54FD535F22C7AF3600FCBAE8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				54FD536022C7AF6C00FCBAE8 /* MemberListItemCell.swift */,
-				54FD536122C7AF6C00FCBAE8 /* MemberListItemCell.xib */,
-				54FD536222C7AF6C00FCBAE8 /* MemberListItemCellBindable.swift */,
+				54FD53AB22C8B95E00FCBAE8 /* MoralledItemCell.swift */,
+				54FD536122C7AF6C00FCBAE8 /* MoralledItemCell.xib */,
+				54FD536222C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -312,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				54FD537822C7BAF300FCBAE8 /* Presentable.swift */,
+				54FD53BC22C8CA9A00FCBAE8 /* IdentificableModel.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -322,6 +372,8 @@
 				54FD536E22C7B49500FCBAE8 /* UIImageView+ImageDownload.swift */,
 				54FD537222C7B90700FCBAE8 /* String+Modifications.swift */,
 				54FD537422C7B95000FCBAE8 /* Int+Modifications.swift */,
+				54FD539522C8B2BC00FCBAE8 /* UIButton+Modifiers.swift */,
+				54FD539F22C8B61800FCBAE8 /* UILabel+Modifiers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -330,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				54FD537E22C7BCBF00FCBAE8 /* MemberListViewModel.swift */,
+				54FD53B422C8C02800FCBAE8 /* MemberDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,8 +393,17 @@
 				54FD538322C7BD1200FCBAE8 /* DataServiceProvider.swift */,
 				54FD538922C7CFF800FCBAE8 /* FirDataServiceProvider.swift */,
 				54FD538022C7BCED00FCBAE8 /* MemberListService.swift */,
+				54FD53B822C8C0DF00FCBAE8 /* MemberDetailService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		54FD53AD22C8BADA00FCBAE8 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				54FD53AE22C8BAF000FCBAE8 /* MoralListDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 		E077A12EADA300C7C2929C1B /* Pods */ = {
@@ -438,12 +500,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */,
-				54FD536422C7AF6C00FCBAE8 /* MemberListItemCell.xib in Resources */,
+				54FD536422C7AF6C00FCBAE8 /* MoralledItemCell.xib in Resources */,
 				54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */,
+				54FD539D22C8B58300FCBAE8 /* SectionHeaderView.xib in Resources */,
 				54FD536822C7AFFE00FCBAE8 /* BorderedImageView.xib in Resources */,
 				54FD531622C5E66600FCBAE8 /* Main.storyboard in Resources */,
 				54FD531B22C5E66700FCBAE8 /* LaunchScreen.storyboard in Resources */,
 				54FD531822C5E66700FCBAE8 /* Assets.xcassets in Resources */,
+				54FD539322C8B06800FCBAE8 /* RButton.xib in Resources */,
+				54FD539922C8B49C00FCBAE8 /* MoralListView.xib in Resources */,
 				54FD535322C5ED9F00FCBAE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,14 +625,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FD53B922C8C0DF00FCBAE8 /* MemberDetailService.swift in Sources */,
+				54FD539422C8B06800FCBAE8 /* RButton.swift in Sources */,
 				54FD534B22C5E6D200FCBAE8 /* BaseResponse.swift in Sources */,
 				54FD537922C7BAF300FCBAE8 /* Presentable.swift in Sources */,
 				54FD533C22C5E6B800FCBAE8 /* Constants.swift in Sources */,
 				54FD533B22C5E6B800FCBAE8 /* Events.swift in Sources */,
+				54FD53B122C8BD1A00FCBAE8 /* MemberDetailMView.swift in Sources */,
 				54FD534722C5E6C100FCBAE8 /* Routable.swift in Sources */,
 				54FD535822C7AB9E00FCBAE8 /* MemberListMView.swift in Sources */,
 				54FD533D22C5E6B800FCBAE8 /* Numbers.swift in Sources */,
-				54FD536522C7AF6C00FCBAE8 /* MemberListItemCellBindable.swift in Sources */,
+				54FD536522C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift in Sources */,
 				54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */,
 				54FD534922C5E6CA00FCBAE8 /* BaseViewController.swift in Sources */,
 				54FD537B22C7BB1C00FCBAE8 /* BasePresenter.swift in Sources */,
@@ -575,23 +643,35 @@
 				54FD534622C5E6C100FCBAE8 /* RouteIdentifiable.swift in Sources */,
 				54FD536922C7AFFE00FCBAE8 /* BorderedImageView.swift in Sources */,
 				54FD537122C7B4D100FCBAE8 /* MemberListItemCellContract.swift in Sources */,
+				54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */,
+				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
 				54FD537522C7B95000FCBAE8 /* Int+Modifications.swift in Sources */,
-				54FD536322C7AF6C00FCBAE8 /* MemberListItemCell.swift in Sources */,
 				54FD536F22C7B49500FCBAE8 /* UIImageView+ImageDownload.swift in Sources */,
+				54FD53A222C8B79D00FCBAE8 /* SectionHeaderViewContract.swift in Sources */,
+				54FD539622C8B2BC00FCBAE8 /* UIButton+Modifiers.swift in Sources */,
 				54FD535D22C7ACFD00FCBAE8 /* BaseTableViewContract.swift in Sources */,
 				54FD537722C7BAD100FCBAE8 /* MemberListMViewPresenter.swift in Sources */,
+				54FD539E22C8B58300FCBAE8 /* SectionHeaderView.swift in Sources */,
 				54FD535522C7AB4500FCBAE8 /* MembersListViewController.swift in Sources */,
 				54FD536C22C7B40400FCBAE8 /* BorderedImageViewContract.swift in Sources */,
+				54FD539A22C8B49C00FCBAE8 /* MoralListView.swift in Sources */,
 				54FD538422C7BD1200FCBAE8 /* DataServiceProvider.swift in Sources */,
 				54FD538822C7C39800FCBAE8 /* User.swift in Sources */,
 				54FD534F22C5E6DA00FCBAE8 /* Colors.swift in Sources */,
+				54FD539022C8AE8500FCBAE8 /* MemberDetailViewController.swift in Sources */,
 				54FD533922C5E6B800FCBAE8 /* Cells.swift in Sources */,
 				54FD538C22C7FE7B00FCBAE8 /* BaseNavigationController.swift in Sources */,
+				54FD53BB22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift in Sources */,
 				54FD538A22C7CFF800FCBAE8 /* FirDataServiceProvider.swift in Sources */,
 				54FD535B22C7ACAD00FCBAE8 /* MemberListMViewContract.swift in Sources */,
 				54FD535122C5E6DA00FCBAE8 /* MixedColor.swift in Sources */,
 				54FD537F22C7BCBF00FCBAE8 /* MemberListViewModel.swift in Sources */,
+				54FD53BD22C8CA9A00FCBAE8 /* IdentificableModel.swift in Sources */,
 				54FD538122C7BCED00FCBAE8 /* MemberListService.swift in Sources */,
+				54FD53A422C8B80D00FCBAE8 /* MoralListViewContract.swift in Sources */,
+				54FD53A022C8B61800FCBAE8 /* UILabel+Modifiers.swift in Sources */,
+				54FD53B322C8BD5100FCBAE8 /* MemberDetailMViewContract.swift in Sources */,
+				54FD53AF22C8BAF000FCBAE8 /* MoralListDataSource.swift in Sources */,
 				54FD538E22C8038800FCBAE8 /* BaseTabBarController.swift in Sources */,
 				54FD534122C5E6B800FCBAE8 /* EndPoints.swift in Sources */,
 				54FD533F22C5E6B800FCBAE8 /* FontDeliver.swift in Sources */,

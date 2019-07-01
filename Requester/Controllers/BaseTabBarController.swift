@@ -25,7 +25,7 @@ class BaseTabBarController: UITabBarController {
         self.setBackgroundColor()
     }
     
-    func setBackgroundColor() {
+    private func setBackgroundColor() {
         self.tabBar.theme.backgroundColor = themed {
             $0.backgroundColor
         }
@@ -38,7 +38,7 @@ class BaseTabBarController: UITabBarController {
         self.tabBar.backgroundImage = UIImage()
     }
     
-    func setTitle() {
+    private func setTitle() {
         self.tabBar.theme.tintColor = themed {
             $0.primaryTextColor
         }

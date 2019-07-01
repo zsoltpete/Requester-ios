@@ -10,10 +10,13 @@ import RxCocoa
 import RxSwift
 import UIKit
 
+typealias MoralledItemActionCompletition = ((MoralledItemCellBindable) -> Void)
+
 class MemberListMView: UIView {
     
     var tableViewDisposable: Disposable?
     let disposeBag = DisposeBag()
+    private var selectionAction: MoralledItemActionCompletition?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,22 +31,29 @@ class MemberListMView: UIView {
         self.registerCells()
         self.tableView.delegate = nil
         self.tableView.dataSource = nil
+        self.tableView.rx.modelSelected(MoralledItemCellBindable.self).subscribe(onNext: { [weak self]model in
+            self?.selectionAction?(model)
+        }).disposed(by: disposeBag)
     }
     
 }
 
 extension MemberListMView: MemberListMViewContract {
     
-    func updateList(_ model: [MemberListItemCellBindable]) {
+    func updateList(_ model: [MoralledItemCellBindable]) {
         tableViewDisposable?.dispose()
-        self.tableViewDisposable = Observable.just(model).bind(to: self.tableView.rx.items(cellIdentifier: Cells.MemberListItemCell)) { (_, model, cell: MemberListItemCell) in
+        self.tableViewDisposable = Observable.just(model).bind(to: self.tableView.rx.items(cellIdentifier: Cells.MoralledItemCell)) { (_, model, cell: MoralledItemCell) in
             cell.bind(model)
         }
     }
     
     func registerCells() {
-        let cellNib = UINib(nibName: Cells.MemberListItemCell, bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: Cells.MemberListItemCell)
+        let cellNib = UINib(nibName: Cells.MoralledItemCell, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: Cells.MoralledItemCell)
+    }
+    
+    func setDidSelectionAction(_ action: MoralledItemActionCompletition?) {
+        self.selectionAction = action
     }
     
 }

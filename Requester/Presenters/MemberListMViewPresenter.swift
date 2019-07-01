@@ -22,6 +22,7 @@ class MemberListMViewPresenter: BasePresenter {
         self.view = view
         super.init()
         self.initSubscriptions()
+        self.addSelectionAction()
     }
     
     override func presenterWillAppear() {
@@ -35,11 +36,17 @@ class MemberListMViewPresenter: BasePresenter {
         }).disposed(by: disposeBag)
     }
     
+    private func addSelectionAction() {
+        self.view.setDidSelectionAction { model in
+            NotificationCenter.default.post(name: Events.ShowMemberDetailView, object: model.pId)
+        }
+    }
+    
 }
 
 extension MemberListMViewPresenter: Presentable {
     
-    func handleViewState(_ state: [MemberListItemCellBindable]) {
+    func handleViewState(_ state: [MoralledItemCellBindable]) {
         self.view.updateList(state)
     }
     

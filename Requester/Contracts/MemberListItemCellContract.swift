@@ -11,6 +11,6 @@ import Foundation
 protocol MemberListItemCellContract {
     
     ///Binding cell from model
-    func bind(_ model: MemberListItemCellBindable)
+    func bind(_ model: MoralledItemCellBindable)
     
 }

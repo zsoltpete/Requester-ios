@@ -19,7 +19,6 @@ protocol NavigationControllerStyler {
 
 class BaseNavigationController: UINavigationController, NavigationControllerStyler {
     
-    //WARNING: fdd
     func setBackgroundColor() {
         self.navigationBar.theme.barTintColor = themed {
             $0.backgroundColor

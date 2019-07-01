@@ -25,7 +25,7 @@ class FirDataServiceProvider: DataServiceProvider {
         super.init()
     }
     
-    func firRequest<ReturnValue: Mappable>(endPoint: String) -> Single<[ReturnValue]> {
+    func firRequest<ReturnValue: IdentificableModel>(endPoint: String) -> Single<[ReturnValue]> {
         return Single<[ReturnValue]>.create { [weak self]single in
             self?.ref.child(endPoint).observeSingleEvent(of: .value, with: { snapshot in
                 var array = [ReturnValue]()
@@ -35,13 +35,11 @@ class FirDataServiceProvider: DataServiceProvider {
                 
                 Log.info(dictValue)
                 
-                for (_, value) in dictValue {
-                    guard let dict = value as? [String: Any] else {
+                for (key, value) in dictValue {
+                    guard let dict = value as? [String: Any], let key = key as? String else {
                         return
                     }
-                    guard let obj = ReturnValue(JSON: dict) else {
-                        return
-                    }
+                    let obj = ReturnValue(id: key, JSON: dict)
                     array.append(obj)
                 }
                 single(.success(array))
