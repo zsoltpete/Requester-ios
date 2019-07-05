@@ -16,3 +16,12 @@ extension String {
     }
     
 }
+
+extension String: RPopUpCellBindable {
+    
+    var pText: String {
+        return self
+    }
+    
+    
+}

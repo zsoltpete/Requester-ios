@@ -10,8 +10,6 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-typealias MoralledItemActionCompletition = ((MoralledItemCellBindable) -> Void)
-
 class MemberListMView: UIView {
     
     var tableViewDisposable: Disposable?

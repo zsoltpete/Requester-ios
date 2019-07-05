@@ -71,7 +71,7 @@ class BorderedImageView: UIView {
         self.imageView.layer.masksToBounds = true
         self.imageView.layer.borderWidth = 2.0.pps
         self.imageView.layer.cornerRadius = self.imageView.frame.size.height / 2.0
-        self.imageView.layer.theme.borderColor = themed { $0.borderedImageBorderColor.cgColor
+        self.imageView.layer.theme.borderColor = themed { $0.borderColor.cgColor
         }
     }
     

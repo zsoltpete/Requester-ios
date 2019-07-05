@@ -43,6 +43,10 @@ extension MemberDetailMView: ComponentsScaling {
 
 extension MemberDetailMView: MemberDetailMViewContract {
     
+    func setRequestButtonAction(_ action: DefaultCompletion?) {
+        self.requestButton.setButtonAction(action)
+    }
+    
     func bindRequestButton(_ title: String) {
         self.requestButton.setButtonTitle(title)
     }

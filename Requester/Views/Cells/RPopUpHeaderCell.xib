@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RPopUpHeaderCell" id="ptp-T8-XjS" customClass="RPopUpHeaderCell" customModule="Requester" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ptp-T8-XjS" id="nai-YJ-QLS">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-O9-0uQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymq-O7-HBu">
+                                <rect key="frame" x="16" y="16" width="343" height="83.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ymq-O7-HBu" firstAttribute="leading" secondItem="S2e-O9-0uQ" secondAttribute="leading" constant="16" id="Hp1-Cn-Mvc"/>
+                            <constraint firstAttribute="trailing" secondItem="ymq-O7-HBu" secondAttribute="trailing" constant="16" id="MNT-vT-MJs"/>
+                            <constraint firstItem="ymq-O7-HBu" firstAttribute="top" secondItem="S2e-O9-0uQ" secondAttribute="top" constant="16" id="ZEe-ol-zhQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ymq-O7-HBu" secondAttribute="bottom" id="rlB-yF-gYK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S2e-O9-0uQ" firstAttribute="top" secondItem="nai-YJ-QLS" secondAttribute="top" id="5cx-O3-nmu"/>
+                    <constraint firstAttribute="bottom" secondItem="S2e-O9-0uQ" secondAttribute="bottom" id="J4s-Fm-fV5"/>
+                    <constraint firstItem="S2e-O9-0uQ" firstAttribute="leading" secondItem="nai-YJ-QLS" secondAttribute="leading" id="obq-zf-9Ui"/>
+                    <constraint firstAttribute="trailing" secondItem="S2e-O9-0uQ" secondAttribute="trailing" id="xKf-Tk-TRl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="S2e-O9-0uQ" id="m3S-pq-sDU"/>
+                <outlet property="titleLabel" destination="ymq-O7-HBu" id="I4Z-K8-oDD"/>
+                <outlet property="titleLabelLeadingConstraint" destination="Hp1-Cn-Mvc" id="AC2-Vd-o2I"/>
+                <outlet property="titleLabelTopConstraint" destination="ZEe-ol-zhQ" id="a4l-IQ-BVd"/>
+                <outlet property="titleLabelTrailingConstraint" destination="MNT-vT-MJs" id="cYS-04-RV2"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="2"/>
+        </tableViewCell>
+    </objects>
+</document>

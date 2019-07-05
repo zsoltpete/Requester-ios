@@ -22,4 +22,7 @@ protocol MemberDetailMViewContract {
     //Bind Send button
     func bindRequestButton(_ title: String)
     
+    ///Set action for button
+    func setRequestButtonAction(_ action: DefaultCompletion?)
+    
 }

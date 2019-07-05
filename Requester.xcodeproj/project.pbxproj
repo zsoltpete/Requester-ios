@@ -14,6 +14,20 @@
 		5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857122CA6D70002E0E8A /* CategoryStore.swift */; };
 		5425857422CA6DAF002E0E8A /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857322CA6DAF002E0E8A /* CategoryService.swift */; };
 		5425857622CA7852002E0E8A /* RButtonContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425857522CA7852002E0E8A /* RButtonContract.swift */; };
+		544C0C7222CFD1C4006FC3F9 /* RPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C7022CFD1C4006FC3F9 /* RPopUpView.xib */; };
+		544C0C7322CFD1C4006FC3F9 /* RPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */; };
+		544C0C7522CFD40F006FC3F9 /* RPopUpViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */; };
+		544C0C7722CFD44A006FC3F9 /* RPopUpViewBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7622CFD44A006FC3F9 /* RPopUpViewBindable.swift */; };
+		544C0C7922CFD5C5006FC3F9 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7822CFD5C5006FC3F9 /* UIView+Animations.swift */; };
+		544C0C7C22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7A22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift */; };
+		544C0C7D22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C7B22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib */; };
+		544C0C7F22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */; };
+		544C0C8322CFD90C006FC3F9 /* RPopUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8022CFD90C006FC3F9 /* RPopUpCell.swift */; };
+		544C0C8422CFD90C006FC3F9 /* RPopUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C8122CFD90C006FC3F9 /* RPopUpCell.xib */; };
+		544C0C8522CFD90C006FC3F9 /* RPopUpCellBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8222CFD90C006FC3F9 /* RPopUpCellBindable.swift */; };
+		544C0C8722CFD9FA006FC3F9 /* RPopUpCellConstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */; };
+		544C0C8922CFDC7A006FC3F9 /* RPopUpViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */; };
+		544C0C8B22CFE140006FC3F9 /* RPopUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -103,6 +117,20 @@
 		5425857122CA6D70002E0E8A /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStore.swift; sourceTree = "<group>"; };
 		5425857322CA6DAF002E0E8A /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		5425857522CA7852002E0E8A /* RButtonContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RButtonContract.swift; sourceTree = "<group>"; };
+		544C0C7022CFD1C4006FC3F9 /* RPopUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpView.xib; sourceTree = "<group>"; };
+		544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpView.swift; sourceTree = "<group>"; };
+		544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpViewContract.swift; sourceTree = "<group>"; };
+		544C0C7622CFD44A006FC3F9 /* RPopUpViewBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpViewBindable.swift; sourceTree = "<group>"; };
+		544C0C7822CFD5C5006FC3F9 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		544C0C7A22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpHeaderCell.swift; sourceTree = "<group>"; };
+		544C0C7B22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpHeaderCell.xib; sourceTree = "<group>"; };
+		544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpHeaderCellContract.swift; sourceTree = "<group>"; };
+		544C0C8022CFD90C006FC3F9 /* RPopUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpCell.swift; sourceTree = "<group>"; };
+		544C0C8122CFD90C006FC3F9 /* RPopUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpCell.xib; sourceTree = "<group>"; };
+		544C0C8222CFD90C006FC3F9 /* RPopUpCellBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpCellBindable.swift; sourceTree = "<group>"; };
+		544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpCellConstract.swift; sourceTree = "<group>"; };
+		544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpViewDataSource.swift; sourceTree = "<group>"; };
+		544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpModel.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -309,6 +337,7 @@
 				5425856822CA6455002E0E8A /* MoralItem.swift */,
 				5425856A22CA697D002E0E8A /* MoralListItem.swift */,
 				5425856E22CA69DE002E0E8A /* Category.swift */,
+				544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -346,6 +375,8 @@
 				54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */,
 				54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */,
 				54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */,
+				544C0C7022CFD1C4006FC3F9 /* RPopUpView.xib */,
+				544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +392,9 @@
 				54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */,
 				54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */,
 				5425857522CA7852002E0E8A /* RButtonContract.swift */,
+				544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */,
+				544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */,
+				544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -381,6 +415,10 @@
 				54FD53AB22C8B95E00FCBAE8 /* MoralledItemCell.swift */,
 				54FD536122C7AF6C00FCBAE8 /* MoralledItemCell.xib */,
 				54FD536222C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift */,
+				544C0C7A22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift */,
+				544C0C7B22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib */,
+				544C0C8022CFD90C006FC3F9 /* RPopUpCell.swift */,
+				544C0C8122CFD90C006FC3F9 /* RPopUpCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -390,6 +428,8 @@
 			children = (
 				54FD537822C7BAF300FCBAE8 /* Presentable.swift */,
 				54FD53BC22C8CA9A00FCBAE8 /* IdentificableModel.swift */,
+				544C0C7622CFD44A006FC3F9 /* RPopUpViewBindable.swift */,
+				544C0C8222CFD90C006FC3F9 /* RPopUpCellBindable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -402,6 +442,7 @@
 				54FD537422C7B95000FCBAE8 /* Int+Modifications.swift */,
 				54FD539522C8B2BC00FCBAE8 /* UIButton+Modifiers.swift */,
 				54FD539F22C8B61800FCBAE8 /* UILabel+Modifiers.swift */,
+				544C0C7822CFD5C5006FC3F9 /* UIView+Animations.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -431,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				54FD53AE22C8BAF000FCBAE8 /* MoralListDataSource.swift */,
+				544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -529,13 +571,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */,
+				544C0C7D22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib in Resources */,
 				54FD536422C7AF6C00FCBAE8 /* MoralledItemCell.xib in Resources */,
 				54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */,
 				54FD539D22C8B58300FCBAE8 /* SectionHeaderView.xib in Resources */,
 				54FD536822C7AFFE00FCBAE8 /* BorderedImageView.xib in Resources */,
 				54FD531622C5E66600FCBAE8 /* Main.storyboard in Resources */,
+				544C0C8422CFD90C006FC3F9 /* RPopUpCell.xib in Resources */,
 				54FD531B22C5E66700FCBAE8 /* LaunchScreen.storyboard in Resources */,
 				54FD531822C5E66700FCBAE8 /* Assets.xcassets in Resources */,
+				544C0C7222CFD1C4006FC3F9 /* RPopUpView.xib in Resources */,
 				54FD539322C8B06800FCBAE8 /* RButton.xib in Resources */,
 				54FD539922C8B49C00FCBAE8 /* MoralListView.xib in Resources */,
 				54FD535322C5ED9F00FCBAE8 /* GoogleService-Info.plist in Resources */,
@@ -669,13 +714,19 @@
 				54FD534922C5E6CA00FCBAE8 /* BaseViewController.swift in Sources */,
 				5425857422CA6DAF002E0E8A /* CategoryService.swift in Sources */,
 				54FD537B22C7BB1C00FCBAE8 /* BasePresenter.swift in Sources */,
+				544C0C7322CFD1C4006FC3F9 /* RPopUpView.swift in Sources */,
 				54FD533A22C5E6B800FCBAE8 /* Enums.swift in Sources */,
 				54FD534622C5E6C100FCBAE8 /* RouteIdentifiable.swift in Sources */,
+				544C0C7F22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift in Sources */,
+				544C0C7522CFD40F006FC3F9 /* RPopUpViewContract.swift in Sources */,
 				54FD536922C7AFFE00FCBAE8 /* BorderedImageView.swift in Sources */,
 				54FD537122C7B4D100FCBAE8 /* MemberListItemCellContract.swift in Sources */,
+				544C0C8522CFD90C006FC3F9 /* RPopUpCellBindable.swift in Sources */,
 				54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */,
 				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
+				544C0C8922CFDC7A006FC3F9 /* RPopUpViewDataSource.swift in Sources */,
 				54FD537522C7B95000FCBAE8 /* Int+Modifications.swift in Sources */,
+				544C0C8722CFD9FA006FC3F9 /* RPopUpCellConstract.swift in Sources */,
 				54FD536F22C7B49500FCBAE8 /* UIImageView+ImageDownload.swift in Sources */,
 				5425856D22CA69BE002E0E8A /* MoralListItemHelper.swift in Sources */,
 				54FD53A222C8B79D00FCBAE8 /* SectionHeaderViewContract.swift in Sources */,
@@ -686,6 +737,7 @@
 				54FD535522C7AB4500FCBAE8 /* MembersListViewController.swift in Sources */,
 				54FD536C22C7B40400FCBAE8 /* BorderedImageViewContract.swift in Sources */,
 				54FD539A22C8B49C00FCBAE8 /* MoralListView.swift in Sources */,
+				544C0C7C22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift in Sources */,
 				5425857622CA7852002E0E8A /* RButtonContract.swift in Sources */,
 				54FD538422C7BD1200FCBAE8 /* DataServiceProvider.swift in Sources */,
 				54FD538822C7C39800FCBAE8 /* User.swift in Sources */,
@@ -696,6 +748,7 @@
 				54FD53BB22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift in Sources */,
 				54FD538A22C7CFF800FCBAE8 /* FirDataServiceProvider.swift in Sources */,
 				54FD535B22C7ACAD00FCBAE8 /* MemberListMViewContract.swift in Sources */,
+				544C0C8B22CFE140006FC3F9 /* RPopUpModel.swift in Sources */,
 				5425856F22CA69DE002E0E8A /* Category.swift in Sources */,
 				54FD535122C5E6DA00FCBAE8 /* MixedColor.swift in Sources */,
 				54FD537F22C7BCBF00FCBAE8 /* MemberListViewModel.swift in Sources */,
@@ -703,6 +756,7 @@
 				54FD538122C7BCED00FCBAE8 /* MemberListService.swift in Sources */,
 				54FD53A422C8B80D00FCBAE8 /* MoralListViewContract.swift in Sources */,
 				54FD53A022C8B61800FCBAE8 /* UILabel+Modifiers.swift in Sources */,
+				544C0C7722CFD44A006FC3F9 /* RPopUpViewBindable.swift in Sources */,
 				54FD53B322C8BD5100FCBAE8 /* MemberDetailMViewContract.swift in Sources */,
 				54FD53AF22C8BAF000FCBAE8 /* MoralListDataSource.swift in Sources */,
 				5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */,
@@ -715,7 +769,9 @@
 				5425856922CA6455002E0E8A /* MoralItem.swift in Sources */,
 				54FD534522C5E6C100FCBAE8 /* AppStoryboard.swift in Sources */,
 				54FD537322C7B90700FCBAE8 /* String+Modifications.swift in Sources */,
+				544C0C8322CFD90C006FC3F9 /* RPopUpCell.swift in Sources */,
 				54FD535022C5E6DA00FCBAE8 /* Theme.swift in Sources */,
+				544C0C7922CFD5C5006FC3F9 /* UIView+Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

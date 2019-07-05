@@ -23,6 +23,7 @@ class RButton: UIView {
     
     // MARK: - var variables
     var contentView: UIView?
+    var buttonAction: DefaultCompletion?
     // MARK: - LifeCycle methods
 
     override init(frame: CGRect) {
@@ -76,6 +77,12 @@ class RButton: UIView {
         self.loadXib()
         self.setScalableComponents()
         self.button.addRButtonModifier()
+        self.button.addTarget(self, action: #selector(buttonActionWrapper), for: .touchUpInside)
+    }
+    
+    @objc
+    private func buttonActionWrapper() {
+        buttonAction?()
     }
 
 }
@@ -90,6 +97,10 @@ extension RButton: ComponentsScaling {
 }
 
 extension RButton: RButtonContract {
+    
+    func setButtonAction(_ action: DefaultCompletion?) {
+        self.buttonAction = action
+    }
     
     func setButtonTitle(_ title: String) {
         self.button.setTitle(title, for: .normal)

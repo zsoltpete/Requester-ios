@@ -17,4 +17,20 @@ extension UILabel {
         self.font = FontDeliver.semiBoldSystem(sizeOf: 17.0.pps)
     }
     
+    func addPopUpHeaderModifier() {
+        self.numberOfLines = 0
+        self.theme.textColor = themed {
+            $0.primaryTextColor
+        }
+        self.font = FontDeliver.semiBoldSystem(sizeOf: 24.0.pps)
+    }
+    
+    func addPopUpMessageModifier() {
+        self.numberOfLines = 0
+        self.theme.textColor = themed {
+            $0.primaryTextColor
+        }
+        self.font = FontDeliver.system(sizeOf: 16.0.pps)
+    }
+    
 }

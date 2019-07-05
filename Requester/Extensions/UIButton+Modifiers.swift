@@ -19,7 +19,7 @@ extension UIButton {
             $0.backgroundColor
         }
         self.layer.theme.borderColor = themed {
-            $0.borderedImageBorderColor.cgColor
+            $0.borderColor.cgColor
         }
         self.layer.borderWidth = 1.0.pps
         self.layer.cornerRadius = 15.0.pps

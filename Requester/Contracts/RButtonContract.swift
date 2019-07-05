@@ -11,5 +11,6 @@ import Foundation
 protocol RButtonContract {
     
     func setButtonTitle(_ title: String)
+    func setButtonAction(_ action: DefaultCompletion?)
     
 }

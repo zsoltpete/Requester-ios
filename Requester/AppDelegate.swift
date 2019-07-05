@@ -10,6 +10,9 @@ import PixelPerfectSwift
 import Firebase
 import UIKit
 
+typealias MoralledItemActionCompletition = ((MoralledItemCellBindable) -> Void)
+typealias DefaultCompletion = (() -> ())
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

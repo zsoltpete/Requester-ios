@@ -17,6 +17,7 @@ struct Colors {
     private static let mainGreen = UIColor(rgb: 0x54C418)
     private static let dividerGray = UIColor(rgb: 0xE4E1E1).withAlphaComponent(0.5)
     private static let borderRed = UIColor(rgb: 0x541010)
+    private static let rPopUpBackground = UIColor(rgb: 0x0E254E)
     
     static let BackGroundColor = MixedColor(light: .white, dark: .black)
     static let PrimaryTextColor = MixedColor(light: Colors.mainBlue, dark: Colors.mainBlue)
@@ -26,5 +27,6 @@ struct Colors {
     static let DividerColor = MixedColor(light: Colors.dividerGray, dark: Colors.dividerGray)
     static let RButtonBackgroundColor = MixedColor(light: Colors.mainRed, dark: Colors.mainRed)
     static let RButtonBorderColor = MixedColor(light: Colors.borderRed, dark: Colors.borderRed)
+    static let RPopUpBackgroundColor = MixedColor(light: Colors.rPopUpBackground, dark: Colors.rPopUpBackground)
     
 }

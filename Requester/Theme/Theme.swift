@@ -15,34 +15,37 @@ import UIKit
 protocol Theme {
     var backgroundColor: UIColor { get }
     var primaryTextColor: UIColor { get }
-    var borderedImageBorderColor: UIColor { get }
+    var borderColor: UIColor { get }
     var lowPercentColor: UIColor { get }
     var highPercentColor: UIColor { get }
     var dividerGray: UIColor { get }
     var buttonBackgroundColor: UIColor { get }
     var buttonBorderColor: UIColor { get }
+    var rPopUpBackground: UIColor { get }
 }
 
 struct LightTheme: Theme {
     let backgroundColor = Colors.BackGroundColor.light
     let primaryTextColor = Colors.PrimaryTextColor.light
-    let borderedImageBorderColor = Colors.BorderedImageBorderColor.light
+    let borderColor = Colors.BorderedImageBorderColor.light
     let lowPercentColor = Colors.LowPercentColor.light
     let highPercentColor = Colors.HighPercentColor.light
     var dividerGray = Colors.DividerColor.light
     var buttonBorderColor = Colors.RButtonBorderColor.light
     var buttonBackgroundColor = Colors.RButtonBackgroundColor.light
+    var rPopUpBackground = Colors.RPopUpBackgroundColor.light
 }
 
 struct DarkTheme: Theme {
     let backgroundColor = Colors.BackGroundColor.dark
     let primaryTextColor = Colors.PrimaryTextColor.dark
-    let borderedImageBorderColor = Colors.BorderedImageBorderColor.dark
+    let borderColor = Colors.BorderedImageBorderColor.dark
     let lowPercentColor = Colors.LowPercentColor.dark
     let highPercentColor = Colors.HighPercentColor.dark
     var dividerGray = Colors.DividerColor.dark
     var buttonBorderColor = Colors.RButtonBorderColor.dark
     var buttonBackgroundColor = Colors.RButtonBackgroundColor.dark
+    var rPopUpBackground = Colors.RPopUpBackgroundColor.dark
 }
 
 enum ThemeType: ThemeProvider {
