@@ -11,14 +11,20 @@ import UIKit
 class RPopUpViewDataSource: NSObject {
     
     var model: RPopUpViewBindable
+    private var agreeCompletition: DefaultCompletion?
+    private var disagreeCompletition: DefaultCompletion?
+    private var neverCompletition: DefaultCompletion?
     
-    init(model: RPopUpViewBindable) {
+    init(model: RPopUpViewBindable, agreeCompletition: DefaultCompletion? = nil, disagreeCompletition: DefaultCompletion? = nil, neverCompletition: DefaultCompletion? = nil) {
         self.model = model
+        self.agreeCompletition = agreeCompletition
+        self.disagreeCompletition = disagreeCompletition
+        self.neverCompletition = neverCompletition
     }
     
 }
 
-extension RPopUpViewDataSource:  UITableViewDataSource {
+extension RPopUpViewDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.pMessages.count
     }
@@ -49,6 +55,20 @@ extension RPopUpViewDataSource: UITableViewDelegate {
         cell.setTitle(self.model.pTitle)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 64.0.pps
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 64.0.pps)
+        let footer = RPopUpSimpleFooterView(frame: frame)
+        
+        footer.setButtonTitle(self.model.pButtons[section])
+        footer.setButtonAction(self.agreeCompletition)
+        
+        return footer
     }
     
 }

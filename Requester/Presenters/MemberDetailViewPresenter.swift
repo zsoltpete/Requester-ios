@@ -30,8 +30,8 @@ class MemberDetailViewPresenter: BasePresenter {
     override func presenterDidLoad() {
         super.presenterDidLoad()
         self.view.bindRequestButton("MemberDetail.RequestButton.Title".localized)
-        self.view.setRequestButtonAction { [weak self] in
-            self?.showErrorPopUp()
+        self.view.setRequestButtonAction {
+            ErrorManager.shared.showDefaultErrorPopUp()
         }
     }
     
@@ -44,16 +44,6 @@ class MemberDetailViewPresenter: BasePresenter {
         self.viewModel.viewState.subscribe(onNext: { [weak self]value in
             self?.handleViewState(value)
         }).disposed(by: disposeBag)
-    }
-    
-    func showErrorPopUp() {
-        let model = RPopUpModel(title: "Error", messages: ["Cannot send the invation email. Please try again later…"], buttons: [""])
-        let view = RPopUpView(frame:
-            AppDelegate.shared.guardWindow.frame)
-        view.bind(model)
-        AppDelegate.shared.guardWindow.addSubview(view)
-        view.animateIn()
-        
     }
     
 }

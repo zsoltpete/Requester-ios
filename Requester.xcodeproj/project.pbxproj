@@ -28,6 +28,10 @@
 		544C0C8722CFD9FA006FC3F9 /* RPopUpCellConstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */; };
 		544C0C8922CFDC7A006FC3F9 /* RPopUpViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */; };
 		544C0C8B22CFE140006FC3F9 /* RPopUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */; };
+		544C0C8D22D0AF3B006FC3F9 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C8C22D0AF3B006FC3F9 /* ErrorManager.swift */; };
+		544C0C9122D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */; };
+		544C0C9222D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */; };
+		544C0C9422D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -131,6 +135,10 @@
 		544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpCellConstract.swift; sourceTree = "<group>"; };
 		544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpViewDataSource.swift; sourceTree = "<group>"; };
 		544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpModel.swift; sourceTree = "<group>"; };
+		544C0C8C22D0AF3B006FC3F9 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpSimpleFooterView.xib; sourceTree = "<group>"; };
+		544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpSimpleFooterView.swift; sourceTree = "<group>"; };
+		544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpSimpleFooterViewContract.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -237,8 +245,20 @@
 			isa = PBXGroup;
 			children = (
 				5425857122CA6D70002E0E8A /* CategoryStore.swift */,
+				544C0C8C22D0AF3B006FC3F9 /* ErrorManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		544C0C8E22D0B015006FC3F9 /* RPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				544C0C7022CFD1C4006FC3F9 /* RPopUpView.xib */,
+				544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */,
+				544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */,
+				544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */,
+			);
+			path = RPopUp;
 			sourceTree = "<group>";
 		};
 		54FD52EB22C5E66600FCBAE8 = {
@@ -364,6 +384,7 @@
 		54FD535622C7AB7D00FCBAE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				544C0C8E22D0B015006FC3F9 /* RPopUp */,
 				54FD535F22C7AF3600FCBAE8 /* Cells */,
 				54FD535722C7AB9E00FCBAE8 /* MemberListMView.swift */,
 				54FD536622C7AFFE00FCBAE8 /* BorderedImageView.xib */,
@@ -375,8 +396,6 @@
 				54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */,
 				54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */,
 				54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */,
-				544C0C7022CFD1C4006FC3F9 /* RPopUpView.xib */,
-				544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -395,6 +414,7 @@
 				544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */,
 				544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */,
 				544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */,
+				544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -579,6 +599,7 @@
 				54FD531622C5E66600FCBAE8 /* Main.storyboard in Resources */,
 				544C0C8422CFD90C006FC3F9 /* RPopUpCell.xib in Resources */,
 				54FD531B22C5E66700FCBAE8 /* LaunchScreen.storyboard in Resources */,
+				544C0C9122D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib in Resources */,
 				54FD531822C5E66700FCBAE8 /* Assets.xcassets in Resources */,
 				544C0C7222CFD1C4006FC3F9 /* RPopUpView.xib in Resources */,
 				54FD539322C8B06800FCBAE8 /* RButton.xib in Resources */,
@@ -705,10 +726,12 @@
 				54FD537922C7BAF300FCBAE8 /* Presentable.swift in Sources */,
 				54FD533C22C5E6B800FCBAE8 /* Constants.swift in Sources */,
 				54FD533B22C5E6B800FCBAE8 /* Events.swift in Sources */,
+				544C0C8D22D0AF3B006FC3F9 /* ErrorManager.swift in Sources */,
 				54FD53B122C8BD1A00FCBAE8 /* MemberDetailMView.swift in Sources */,
 				54FD534722C5E6C100FCBAE8 /* Routable.swift in Sources */,
 				54FD535822C7AB9E00FCBAE8 /* MemberListMView.swift in Sources */,
 				54FD533D22C5E6B800FCBAE8 /* Numbers.swift in Sources */,
+				544C0C9422D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift in Sources */,
 				54FD536522C7AF6C00FCBAE8 /* MoralledItemCellBindable.swift in Sources */,
 				54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */,
 				54FD534922C5E6CA00FCBAE8 /* BaseViewController.swift in Sources */,
@@ -723,6 +746,7 @@
 				54FD537122C7B4D100FCBAE8 /* MemberListItemCellContract.swift in Sources */,
 				544C0C8522CFD90C006FC3F9 /* RPopUpCellBindable.swift in Sources */,
 				54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */,
+				544C0C9222D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift in Sources */,
 				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
 				544C0C8922CFDC7A006FC3F9 /* RPopUpViewDataSource.swift in Sources */,
 				54FD537522C7B95000FCBAE8 /* Int+Modifications.swift in Sources */,

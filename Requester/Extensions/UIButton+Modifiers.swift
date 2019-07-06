@@ -26,4 +26,11 @@ extension UIButton {
         self.titleLabel?.font = FontDeliver.system(sizeOf: 22.0.pps)
     }
     
+    func addPopUpButtonModifier() {
+        self.theme.tintColor = themed {
+            $0.primaryTextColor
+        }
+        self.titleLabel?.font = FontDeliver.boldSystem(sizeOf: 16.0.pps)
+    }
+    
 }
