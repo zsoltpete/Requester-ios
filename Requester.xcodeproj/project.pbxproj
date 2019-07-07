@@ -32,6 +32,9 @@
 		544C0C9122D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */; };
 		544C0C9222D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */; };
 		544C0C9422D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */; };
+		544C0C9822D215C2006FC3F9 /* RPopUpMultiFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C9622D215C2006FC3F9 /* RPopUpMultiFooterView.xib */; };
+		544C0C9922D215C2006FC3F9 /* RPopUpMultiFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9722D215C2006FC3F9 /* RPopUpMultiFooterView.swift */; };
+		544C0C9B22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -139,6 +142,9 @@
 		544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpSimpleFooterView.xib; sourceTree = "<group>"; };
 		544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpSimpleFooterView.swift; sourceTree = "<group>"; };
 		544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpSimpleFooterViewContract.swift; sourceTree = "<group>"; };
+		544C0C9622D215C2006FC3F9 /* RPopUpMultiFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpMultiFooterView.xib; sourceTree = "<group>"; };
+		544C0C9722D215C2006FC3F9 /* RPopUpMultiFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpMultiFooterView.swift; sourceTree = "<group>"; };
+		544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpMultiFooterViewContract.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -257,6 +263,8 @@
 				544C0C7122CFD1C4006FC3F9 /* RPopUpView.swift */,
 				544C0C8F22D0B3C7006FC3F9 /* RPopUpSimpleFooterView.xib */,
 				544C0C9022D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift */,
+				544C0C9622D215C2006FC3F9 /* RPopUpMultiFooterView.xib */,
+				544C0C9722D215C2006FC3F9 /* RPopUpMultiFooterView.swift */,
 			);
 			path = RPopUp;
 			sourceTree = "<group>";
@@ -415,6 +423,7 @@
 				544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */,
 				544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */,
 				544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */,
+				544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -595,6 +604,7 @@
 				54FD536422C7AF6C00FCBAE8 /* MoralledItemCell.xib in Resources */,
 				54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */,
 				54FD539D22C8B58300FCBAE8 /* SectionHeaderView.xib in Resources */,
+				544C0C9822D215C2006FC3F9 /* RPopUpMultiFooterView.xib in Resources */,
 				54FD536822C7AFFE00FCBAE8 /* BorderedImageView.xib in Resources */,
 				54FD531622C5E66600FCBAE8 /* Main.storyboard in Resources */,
 				544C0C8422CFD90C006FC3F9 /* RPopUpCell.xib in Resources */,
@@ -745,6 +755,7 @@
 				54FD536922C7AFFE00FCBAE8 /* BorderedImageView.swift in Sources */,
 				54FD537122C7B4D100FCBAE8 /* MemberListItemCellContract.swift in Sources */,
 				544C0C8522CFD90C006FC3F9 /* RPopUpCellBindable.swift in Sources */,
+				544C0C9B22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift in Sources */,
 				54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */,
 				544C0C9222D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift in Sources */,
 				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
@@ -783,6 +794,7 @@
 				544C0C7722CFD44A006FC3F9 /* RPopUpViewBindable.swift in Sources */,
 				54FD53B322C8BD5100FCBAE8 /* MemberDetailMViewContract.swift in Sources */,
 				54FD53AF22C8BAF000FCBAE8 /* MoralListDataSource.swift in Sources */,
+				544C0C9922D215C2006FC3F9 /* RPopUpMultiFooterView.swift in Sources */,
 				5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */,
 				5425856B22CA697D002E0E8A /* MoralListItem.swift in Sources */,
 				54FD538E22C8038800FCBAE8 /* BaseTabBarController.swift in Sources */,

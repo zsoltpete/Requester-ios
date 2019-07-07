@@ -31,7 +31,7 @@ class MemberDetailViewPresenter: BasePresenter {
         super.presenterDidLoad()
         self.view.bindRequestButton("MemberDetail.RequestButton.Title".localized)
         self.view.setRequestButtonAction {
-            ErrorManager.shared.showDefaultErrorPopUp()
+            ErrorManager.shared.showSessionOverPopUp()
         }
     }
     

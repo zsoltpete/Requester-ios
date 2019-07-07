@@ -58,17 +58,38 @@ extension RPopUpViewDataSource: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 64.0.pps
+        switch model.pType {
+        case .one:
+            return 64.0.pps
+        case .three:
+            return 96.0.pps
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 64.0.pps)
-        let footer = RPopUpSimpleFooterView(frame: frame)
         
-        footer.setButtonTitle(self.model.pButtons[section])
-        footer.setButtonAction(self.agreeCompletition)
+        switch model.pType {
+        case .one:
+            let footer = RPopUpSimpleFooterView(frame: frame)
+            
+            footer.setButtonTitle(self.model.pButtons[section])
+            footer.setButtonAction(self.agreeCompletition)
+            
+            return footer
+        case .three:
+            let footer = RPopUpMultiFooterView(frame: frame)
+            
+            footer.setAgreeButtonTitle(model.pButtons[0])
+            footer.setAgreeButtonAction(self.agreeCompletition)
+            footer.setDisagreeButtonTitle(model.pButtons[1])
+            footer.setDisagreeButtonAction(self.agreeCompletition)
+            footer.setNeverButtonTitle(model.pButtons[2])
+            footer.setNeverButtonAction(self.agreeCompletition)
+            
+            return footer
+        }
         
-        return footer
     }
     
 }

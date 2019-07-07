@@ -29,4 +29,18 @@ class ErrorManager {
         
     }
     
+    func showSessionOverPopUp(_ agreeButtonAction: DefaultCompletion? = nil, disagreeCompletiton: DefaultCompletion? = nil, neverCompletition: DefaultCompletion? = nil) {
+        let model = RPopUpModel(title: "Session is Over", messages: ["If session was successfully please tap on yes, if it’s happing no, if it won’t be done then never complete"], buttons: ["YES,  it’s over", "NO, not yet", "NEVER COMPLETE"])
+        let view = RPopUpView(frame:
+            AppDelegate.shared.guardWindow.frame)
+        view.setAgreeCompletition(agreeButtonAction)
+        view.setDisagreeCompletition(disagreeCompletiton)
+        view.setNeverCompletition(neverCompletition)
+        view.bind(model)
+        view.updateHeight()
+        AppDelegate.shared.guardWindow.addSubview(view)
+        view.animateIn()
+        
+    }
+    
 }

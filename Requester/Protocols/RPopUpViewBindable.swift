@@ -13,5 +13,6 @@ protocol RPopUpViewBindable {
     var pTitle: String { get }
     var pMessages: [String] { get }
     var pButtons: [String] { get }
+    var pType: RPopUpFooterType { get }
     
 }

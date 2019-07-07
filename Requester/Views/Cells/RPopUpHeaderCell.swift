@@ -49,7 +49,7 @@ extension RPopUpHeaderCell: ComponentsScaling {
     
     func setScalableComponents() {
         self.titleLabelTopConstraint.constant = 7.0.pps
-        self.titleLabelLeadingConstraint.constant = 16.0.pps
+        self.titleLabelLeadingConstraint.constant = 20.0.pps
         self.titleLabelTrailingConstraint.constant = self.titleLabelLeadingConstraint.constant
     }
     

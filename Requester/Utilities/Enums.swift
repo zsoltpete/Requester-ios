@@ -8,7 +8,13 @@
 
 import Foundation
 
-/// Coontains enums of the app
-struct Enums {
+/**RPopUp footer type
+ one: Only agree button
+ three: Three buttons, agree, disagree and never
+ */
+enum RPopUpFooterType {
+
+    case one
+    case three
     
 }

@@ -47,7 +47,7 @@ class RPopUpCell: UITableViewCell {
 extension RPopUpCell: ComponentsScaling {
     
     func setScalableComponents() {
-        self.messageLabelLeadingConstraint.constant = 16.0.pps
+        self.messageLabelLeadingConstraint.constant = 20.0.pps
         self.messageLabelTrailingConstraint.constant = self.messageLabelLeadingConstraint.constant
     }
     

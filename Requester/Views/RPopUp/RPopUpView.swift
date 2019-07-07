@@ -138,7 +138,7 @@ extension RPopUpView: RPopUpViewContract {
     
     func initTableView() {
         self.tableView.isScrollEnabled = false
-        self.tableView.rowHeight = 50.0.pps
+        self.tableView.estimatedRowHeight = 50.0.pps
         self.backgroundView.theme.backgroundColor = themed {
            $0.rPopUpBackground
         }

@@ -33,4 +33,18 @@ extension UIButton {
         self.titleLabel?.font = FontDeliver.boldSystem(sizeOf: 16.0.pps)
     }
     
+    func addPopUpNeverButtonModifier() {
+        self.theme.tintColor = themed {
+            $0.lowPercentColor
+        }
+        self.titleLabel?.font = FontDeliver.boldSystem(sizeOf: 16.0.pps)
+    }
+    
+    func addPopUpAgreeButtonModifier() {
+        self.theme.tintColor = themed {
+            $0.highPercentColor
+        }
+        self.titleLabel?.font = FontDeliver.boldSystem(sizeOf: 16.0.pps)
+    }
+    
 }
