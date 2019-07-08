@@ -16,4 +16,7 @@ protocol RequestSendingContract: BaseTableViewContract {
     ///Select list item cell
     func selectListItemCell()
     
+    ///Set message input title
+    func setMessageInputViewTitle(_ title: String)
+    
 }

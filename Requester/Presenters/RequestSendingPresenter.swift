@@ -28,6 +28,7 @@ class RequestSendingPresenter: BasePresenter {
         let section = SelectableListItemSection(title: "Category", items: CategoryStore.shared.getCategories())
         self.view.updateList(section)
         self.view.selectListItemCell()
+        self.view.setMessageInputViewTitle("Message:")
     }
     
 }

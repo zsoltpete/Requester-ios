@@ -13,9 +13,11 @@ class RequestSendingMView: UIView {
     
     //@IBOutlets Constraints
     @IBOutlet weak var tableViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var messageInputViewHeightConstraint: NSLayoutConstraint!
     
     //@IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageInputView: RInputView!
     
     //Var
     var dataSource = SelectableListDataSource(SelectableListItemSection())
@@ -58,11 +60,16 @@ extension RequestSendingMView: ComponentsScaling {
     
     func setScalableComponents() {
         self.tableViewHeightConstraint.constant = 227.0.pps
+        self.messageInputViewHeightConstraint.constant = 134.0.pps
     }
     
 }
 
 extension RequestSendingMView: RequestSendingContract {
+    
+    func setMessageInputViewTitle(_ title: String) {
+        self.messageInputView.setHeaderTitle(title)
+    }
     
     //swiftlint:disable weak_self_closure
     func selectListItemCell() {

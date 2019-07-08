@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541282A222D3B8260072B0C9 /* RInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541282A022D3B8260072B0C9 /* RInputView.xib */; };
+		541282A322D3B8260072B0C9 /* RInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541282A122D3B8260072B0C9 /* RInputView.swift */; };
+		541282A722D3BA450072B0C9 /* RInputViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541282A622D3BA450072B0C9 /* RInputViewContract.swift */; };
+		541282A922D3BA980072B0C9 /* UIView+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541282A822D3BA980072B0C9 /* UIView+Modifiers.swift */; };
+		541282AB22D3BD0B0072B0C9 /* UITextView+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541282AA22D3BD0B0072B0C9 /* UITextView+Modifiers.swift */; };
 		5425856922CA6455002E0E8A /* MoralItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856822CA6455002E0E8A /* MoralItem.swift */; };
 		5425856B22CA697D002E0E8A /* MoralListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856A22CA697D002E0E8A /* MoralListItem.swift */; };
 		5425856D22CA69BE002E0E8A /* MoralListItemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425856C22CA69BE002E0E8A /* MoralListItemHelper.swift */; };
@@ -131,6 +136,11 @@
 
 /* Begin PBXFileReference section */
 		29EEA33E2017E1B1EDA4A2FE /* Pods-Requester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Requester.release.xcconfig"; path = "Target Support Files/Pods-Requester/Pods-Requester.release.xcconfig"; sourceTree = "<group>"; };
+		541282A022D3B8260072B0C9 /* RInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RInputView.xib; sourceTree = "<group>"; };
+		541282A122D3B8260072B0C9 /* RInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RInputView.swift; sourceTree = "<group>"; };
+		541282A622D3BA450072B0C9 /* RInputViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RInputViewContract.swift; sourceTree = "<group>"; };
+		541282A822D3BA980072B0C9 /* UIView+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Modifiers.swift"; sourceTree = "<group>"; };
+		541282AA22D3BD0B0072B0C9 /* UITextView+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Modifiers.swift"; sourceTree = "<group>"; };
 		5425856822CA6455002E0E8A /* MoralItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralItem.swift; sourceTree = "<group>"; };
 		5425856A22CA697D002E0E8A /* MoralListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListItem.swift; sourceTree = "<group>"; };
 		5425856C22CA69BE002E0E8A /* MoralListItemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoralListItemHelper.swift; sourceTree = "<group>"; };
@@ -435,6 +445,8 @@
 				54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */,
 				54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */,
 				544C0C9D22D2371D006FC3F9 /* RequestSendingMView.swift */,
+				541282A022D3B8260072B0C9 /* RInputView.xib */,
+				541282A122D3B8260072B0C9 /* RInputView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -457,6 +469,7 @@
 				544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */,
 				54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */,
 				544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */,
+				541282A622D3BA450072B0C9 /* RInputViewContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -511,6 +524,8 @@
 				54FD539522C8B2BC00FCBAE8 /* UIButton+Modifiers.swift */,
 				54FD539F22C8B61800FCBAE8 /* UILabel+Modifiers.swift */,
 				544C0C7822CFD5C5006FC3F9 /* UIView+Animations.swift */,
+				541282A822D3BA980072B0C9 /* UIView+Modifiers.swift */,
+				541282AA22D3BD0B0072B0C9 /* UITextView+Modifiers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -647,6 +662,7 @@
 				54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */,
 				54FD539D22C8B58300FCBAE8 /* SectionHeaderView.xib in Resources */,
 				544C0C9822D215C2006FC3F9 /* RPopUpMultiFooterView.xib in Resources */,
+				541282A222D3B8260072B0C9 /* RInputView.xib in Resources */,
 				54FD536822C7AFFE00FCBAE8 /* BorderedImageView.xib in Resources */,
 				54FD531622C5E66600FCBAE8 /* Main.storyboard in Resources */,
 				544C0C8422CFD90C006FC3F9 /* RPopUpCell.xib in Resources */,
@@ -778,6 +794,7 @@
 				54FD534B22C5E6D200FCBAE8 /* BaseResponse.swift in Sources */,
 				54FD537922C7BAF300FCBAE8 /* Presentable.swift in Sources */,
 				544C0CB922D2456F006FC3F9 /* SelectableListItemSection.swift in Sources */,
+				541282A922D3BA980072B0C9 /* UIView+Modifiers.swift in Sources */,
 				544C0CAB22D238B1006FC3F9 /* SelectableListItem.swift in Sources */,
 				54FD533C22C5E6B800FCBAE8 /* Constants.swift in Sources */,
 				54FD533B22C5E6B800FCBAE8 /* Events.swift in Sources */,
@@ -845,6 +862,7 @@
 				54FD537F22C7BCBF00FCBAE8 /* MemberListViewModel.swift in Sources */,
 				54FD53BD22C8CA9A00FCBAE8 /* IdentificableModel.swift in Sources */,
 				54FD538122C7BCED00FCBAE8 /* MemberListService.swift in Sources */,
+				541282A322D3B8260072B0C9 /* RInputView.swift in Sources */,
 				54FD53A422C8B80D00FCBAE8 /* MoralListViewContract.swift in Sources */,
 				54FD53A022C8B61800FCBAE8 /* UILabel+Modifiers.swift in Sources */,
 				544C0C7722CFD44A006FC3F9 /* RPopUpViewBindable.swift in Sources */,
@@ -854,6 +872,7 @@
 				5425857222CA6D70002E0E8A /* CategoryStore.swift in Sources */,
 				5425856B22CA697D002E0E8A /* MoralListItem.swift in Sources */,
 				54FD538E22C8038800FCBAE8 /* BaseTabBarController.swift in Sources */,
+				541282AB22D3BD0B0072B0C9 /* UITextView+Modifiers.swift in Sources */,
 				54FD534122C5E6B800FCBAE8 /* EndPoints.swift in Sources */,
 				54FD533F22C5E6B800FCBAE8 /* FontDeliver.swift in Sources */,
 				54FD534022C5E6B800FCBAE8 /* Fonts.swift in Sources */,
@@ -861,6 +880,7 @@
 				5425856922CA6455002E0E8A /* MoralItem.swift in Sources */,
 				54FD534522C5E6C100FCBAE8 /* AppStoryboard.swift in Sources */,
 				54FD537322C7B90700FCBAE8 /* String+Modifications.swift in Sources */,
+				541282A722D3BA450072B0C9 /* RInputViewContract.swift in Sources */,
 				544C0C8322CFD90C006FC3F9 /* RPopUpCell.swift in Sources */,
 				54FD535022C5E6DA00FCBAE8 /* Theme.swift in Sources */,
 				544C0C7922CFD5C5006FC3F9 /* UIView+Animations.swift in Sources */,
