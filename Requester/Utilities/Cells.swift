@@ -14,5 +14,6 @@ struct Cells {
     static let MoralledItemCell = "MoralledItemCell"
     static let RPopUpHeaderCell = "RPopUpHeaderCell"
     static let RPopUpCell = "RPopUpCell"
+    static let SelectableListItemCell = "SelectableListItemCell"
     
 }

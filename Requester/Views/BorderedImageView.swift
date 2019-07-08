@@ -77,13 +77,19 @@ class BorderedImageView: UIView {
     
     func initialize() {
         self.loadXib()
+        self.imageView.contentMode = .center
         self.setScalableComponents()
         self.addFonts()
         self.addColors()
     }
     
     func loadImageUrl(_ urlString: String) {
-        self.imageView.downloaded(from: urlString)
+        if urlString.starts(with: "icon_") {
+            self.imageView.image = UIImage(named: urlString)
+        } else {
+            self.imageView.downloaded(from: urlString)
+        }
+        
     }
 
 }

@@ -50,18 +50,19 @@ class MembersListViewController: BaseViewController {
         self.title = title
     }
     
-    func initNotifications() {
+    private func initNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(showMemberDetailView), name: Events.ShowMemberDetailView, object: nil)
     }
     
     @objc
     private func showMemberDetailView(_ notification: Notification) {
-        guard let userId = notification.object as? String else {
+        guard let user = notification.object as? User else {
             return
         }
         
         self.show(classType: MemberDetailViewController.self) { (controller: MemberDetailViewController) in
-            controller.setUserId(userId)
+            controller.setUserId(user.pId)
+            controller.setControllerTitle(user.pName)
         }
     }
 }

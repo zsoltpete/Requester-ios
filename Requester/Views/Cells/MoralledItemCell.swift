@@ -24,7 +24,7 @@ class MoralledItemCell: UITableViewCell {
     @IBOutlet weak var borderedImageView: BorderedImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var moralPercentLabel: UILabel!
-    @IBOutlet weak var seperatorView: UIView!
+    var seperatorView: UIView!
     
     // MARK: - let variables
     
@@ -43,6 +43,7 @@ class MoralledItemCell: UITableViewCell {
 
     func initialize() {
         self.setScalableComponents()
+        self.seperatorView = self.addSeperator()
         self.addFonts()
         self.addColors()
     }

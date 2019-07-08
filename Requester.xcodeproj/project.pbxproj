@@ -35,6 +35,20 @@
 		544C0C9822D215C2006FC3F9 /* RPopUpMultiFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0C9622D215C2006FC3F9 /* RPopUpMultiFooterView.xib */; };
 		544C0C9922D215C2006FC3F9 /* RPopUpMultiFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9722D215C2006FC3F9 /* RPopUpMultiFooterView.swift */; };
 		544C0C9B22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */; };
+		544C0CA222D2371D006FC3F9 /* RequestSendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9C22D2371D006FC3F9 /* RequestSendingViewModel.swift */; };
+		544C0CA322D2371D006FC3F9 /* RequestSendingMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9D22D2371D006FC3F9 /* RequestSendingMView.swift */; };
+		544C0CA422D2371D006FC3F9 /* RequestSendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9E22D2371D006FC3F9 /* RequestSendingViewController.swift */; };
+		544C0CA522D2371D006FC3F9 /* RequestSendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0C9F22D2371D006FC3F9 /* RequestSendingService.swift */; };
+		544C0CA622D2371D006FC3F9 /* RequestSendingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CA022D2371D006FC3F9 /* RequestSendingContract.swift */; };
+		544C0CA722D2371D006FC3F9 /* RequestSendingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CA122D2371D006FC3F9 /* RequestSendingPresenter.swift */; };
+		544C0CA922D2383E006FC3F9 /* SelectableListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CA822D2383E006FC3F9 /* SelectableListDataSource.swift */; };
+		544C0CAB22D238B1006FC3F9 /* SelectableListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CAA22D238B1006FC3F9 /* SelectableListItem.swift */; };
+		544C0CAE22D23913006FC3F9 /* SelectableListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CAC22D23913006FC3F9 /* SelectableListItemCell.swift */; };
+		544C0CAF22D23913006FC3F9 /* SelectableListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544C0CAD22D23913006FC3F9 /* SelectableListItemCell.xib */; };
+		544C0CB122D239CB006FC3F9 /* CellSeperating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB022D239CB006FC3F9 /* CellSeperating.swift */; };
+		544C0CB322D23DBC006FC3F9 /* SelectableListItemCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */; };
+		544C0CB522D23FBA006FC3F9 /* Bool+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB422D23FBA006FC3F9 /* Bool+Toggle.swift */; };
+		544C0CB922D2456F006FC3F9 /* SelectableListItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB822D2456F006FC3F9 /* SelectableListItemSection.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -145,6 +159,20 @@
 		544C0C9622D215C2006FC3F9 /* RPopUpMultiFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RPopUpMultiFooterView.xib; sourceTree = "<group>"; };
 		544C0C9722D215C2006FC3F9 /* RPopUpMultiFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpMultiFooterView.swift; sourceTree = "<group>"; };
 		544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPopUpMultiFooterViewContract.swift; sourceTree = "<group>"; };
+		544C0C9C22D2371D006FC3F9 /* RequestSendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingViewModel.swift; sourceTree = "<group>"; };
+		544C0C9D22D2371D006FC3F9 /* RequestSendingMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingMView.swift; sourceTree = "<group>"; };
+		544C0C9E22D2371D006FC3F9 /* RequestSendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingViewController.swift; sourceTree = "<group>"; };
+		544C0C9F22D2371D006FC3F9 /* RequestSendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingService.swift; sourceTree = "<group>"; };
+		544C0CA022D2371D006FC3F9 /* RequestSendingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingContract.swift; sourceTree = "<group>"; };
+		544C0CA122D2371D006FC3F9 /* RequestSendingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingPresenter.swift; sourceTree = "<group>"; };
+		544C0CA822D2383E006FC3F9 /* SelectableListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListDataSource.swift; sourceTree = "<group>"; };
+		544C0CAA22D238B1006FC3F9 /* SelectableListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListItem.swift; sourceTree = "<group>"; };
+		544C0CAC22D23913006FC3F9 /* SelectableListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListItemCell.swift; sourceTree = "<group>"; };
+		544C0CAD22D23913006FC3F9 /* SelectableListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectableListItemCell.xib; sourceTree = "<group>"; };
+		544C0CB022D239CB006FC3F9 /* CellSeperating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSeperating.swift; sourceTree = "<group>"; };
+		544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListItemCellContract.swift; sourceTree = "<group>"; };
+		544C0CB422D23FBA006FC3F9 /* Bool+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Toggle.swift"; sourceTree = "<group>"; };
+		544C0CB822D2456F006FC3F9 /* SelectableListItemSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableListItemSection.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -348,11 +376,12 @@
 		54FD530022C5E66600FCBAE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				54FD534822C5E6CA00FCBAE8 /* BaseViewController.swift */,
 				54FD538B22C7FE7B00FCBAE8 /* BaseNavigationController.swift */,
 				54FD538D22C8038800FCBAE8 /* BaseTabBarController.swift */,
-				54FD535422C7AB4500FCBAE8 /* MembersListViewController.swift */,
+				54FD534822C5E6CA00FCBAE8 /* BaseViewController.swift */,
 				54FD538F22C8AE8500FCBAE8 /* MemberDetailViewController.swift */,
+				54FD535422C7AB4500FCBAE8 /* MembersListViewController.swift */,
+				544C0C9E22D2371D006FC3F9 /* RequestSendingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +389,7 @@
 		54FD530322C5E66600FCBAE8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				544C0CB822D2456F006FC3F9 /* SelectableListItemSection.swift */,
 				54FD534A22C5E6D200FCBAE8 /* BaseResponse.swift */,
 				54FD538722C7C39800FCBAE8 /* User.swift */,
 				5425856822CA6455002E0E8A /* MoralItem.swift */,
@@ -404,6 +434,7 @@
 				54FD539B22C8B58300FCBAE8 /* SectionHeaderView.xib */,
 				54FD539C22C8B58300FCBAE8 /* SectionHeaderView.swift */,
 				54FD53B022C8BD1A00FCBAE8 /* MemberDetailMView.swift */,
+				544C0C9D22D2371D006FC3F9 /* RequestSendingMView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,18 +443,20 @@
 			isa = PBXGroup;
 			children = (
 				54FD535C22C7ACFD00FCBAE8 /* BaseTableViewContract.swift */,
-				54FD535A22C7ACAD00FCBAE8 /* MemberListMViewContract.swift */,
 				54FD536B22C7B40400FCBAE8 /* BorderedImageViewContract.swift */,
-				54FD537022C7B4D100FCBAE8 /* MemberListItemCellContract.swift */,
-				54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */,
-				54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */,
 				54FD53B222C8BD5100FCBAE8 /* MemberDetailMViewContract.swift */,
+				54FD537022C7B4D100FCBAE8 /* MemberListItemCellContract.swift */,
+				54FD535A22C7ACAD00FCBAE8 /* MemberListMViewContract.swift */,
+				54FD53A322C8B80D00FCBAE8 /* MoralListViewContract.swift */,
 				5425857522CA7852002E0E8A /* RButtonContract.swift */,
-				544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */,
-				544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */,
+				544C0CA022D2371D006FC3F9 /* RequestSendingContract.swift */,
 				544C0C8622CFD9FA006FC3F9 /* RPopUpCellConstract.swift */,
-				544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */,
+				544C0C7E22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift */,
 				544C0C9A22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift */,
+				544C0C9322D0B499006FC3F9 /* RPopUpSimpleFooterViewContract.swift */,
+				544C0C7422CFD40F006FC3F9 /* RPopUpViewContract.swift */,
+				54FD53A122C8B79D00FCBAE8 /* SectionHeaderViewContract.swift */,
+				544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -432,8 +465,9 @@
 			isa = PBXGroup;
 			children = (
 				54FD537A22C7BB1C00FCBAE8 /* BasePresenter.swift */,
-				54FD537622C7BAD100FCBAE8 /* MemberListMViewPresenter.swift */,
 				54FD53BA22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift */,
+				54FD537622C7BAD100FCBAE8 /* MemberListMViewPresenter.swift */,
+				544C0CA122D2371D006FC3F9 /* RequestSendingPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -448,6 +482,8 @@
 				544C0C7B22CFD6F9006FC3F9 /* RPopUpHeaderCell.xib */,
 				544C0C8022CFD90C006FC3F9 /* RPopUpCell.swift */,
 				544C0C8122CFD90C006FC3F9 /* RPopUpCell.xib */,
+				544C0CAC22D23913006FC3F9 /* SelectableListItemCell.swift */,
+				544C0CAD22D23913006FC3F9 /* SelectableListItemCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -459,6 +495,9 @@
 				54FD53BC22C8CA9A00FCBAE8 /* IdentificableModel.swift */,
 				544C0C7622CFD44A006FC3F9 /* RPopUpViewBindable.swift */,
 				544C0C8222CFD90C006FC3F9 /* RPopUpCellBindable.swift */,
+				544C0CAA22D238B1006FC3F9 /* SelectableListItem.swift */,
+				544C0CB022D239CB006FC3F9 /* CellSeperating.swift */,
+				544C0CB422D23FBA006FC3F9 /* Bool+Toggle.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -479,8 +518,9 @@
 		54FD537D22C7BCAB00FCBAE8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				54FD537E22C7BCBF00FCBAE8 /* MemberListViewModel.swift */,
 				54FD53B422C8C02800FCBAE8 /* MemberDetailViewModel.swift */,
+				54FD537E22C7BCBF00FCBAE8 /* MemberListViewModel.swift */,
+				544C0C9C22D2371D006FC3F9 /* RequestSendingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -488,6 +528,7 @@
 		54FD538222C7BCFF00FCBAE8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				544C0C9F22D2371D006FC3F9 /* RequestSendingService.swift */,
 				54FD538322C7BD1200FCBAE8 /* DataServiceProvider.swift */,
 				54FD538922C7CFF800FCBAE8 /* FirDataServiceProvider.swift */,
 				54FD538022C7BCED00FCBAE8 /* MemberListService.swift */,
@@ -502,6 +543,7 @@
 			children = (
 				54FD53AE22C8BAF000FCBAE8 /* MoralListDataSource.swift */,
 				544C0C8822CFDC7A006FC3F9 /* RPopUpViewDataSource.swift */,
+				544C0CA822D2383E006FC3F9 /* SelectableListDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -614,6 +656,7 @@
 				544C0C7222CFD1C4006FC3F9 /* RPopUpView.xib in Resources */,
 				54FD539322C8B06800FCBAE8 /* RButton.xib in Resources */,
 				54FD539922C8B49C00FCBAE8 /* MoralListView.xib in Resources */,
+				544C0CAF22D23913006FC3F9 /* SelectableListItemCell.xib in Resources */,
 				54FD535322C5ED9F00FCBAE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -734,6 +777,8 @@
 				54FD539422C8B06800FCBAE8 /* RButton.swift in Sources */,
 				54FD534B22C5E6D200FCBAE8 /* BaseResponse.swift in Sources */,
 				54FD537922C7BAF300FCBAE8 /* Presentable.swift in Sources */,
+				544C0CB922D2456F006FC3F9 /* SelectableListItemSection.swift in Sources */,
+				544C0CAB22D238B1006FC3F9 /* SelectableListItem.swift in Sources */,
 				54FD533C22C5E6B800FCBAE8 /* Constants.swift in Sources */,
 				54FD533B22C5E6B800FCBAE8 /* Events.swift in Sources */,
 				544C0C8D22D0AF3B006FC3F9 /* ErrorManager.swift in Sources */,
@@ -750,17 +795,24 @@
 				544C0C7322CFD1C4006FC3F9 /* RPopUpView.swift in Sources */,
 				54FD533A22C5E6B800FCBAE8 /* Enums.swift in Sources */,
 				54FD534622C5E6C100FCBAE8 /* RouteIdentifiable.swift in Sources */,
+				544C0CA922D2383E006FC3F9 /* SelectableListDataSource.swift in Sources */,
+				544C0CA622D2371D006FC3F9 /* RequestSendingContract.swift in Sources */,
 				544C0C7F22CFD824006FC3F9 /* RPopUpHeaderCellContract.swift in Sources */,
 				544C0C7522CFD40F006FC3F9 /* RPopUpViewContract.swift in Sources */,
+				544C0CB122D239CB006FC3F9 /* CellSeperating.swift in Sources */,
 				54FD536922C7AFFE00FCBAE8 /* BorderedImageView.swift in Sources */,
+				544C0CA222D2371D006FC3F9 /* RequestSendingViewModel.swift in Sources */,
 				54FD537122C7B4D100FCBAE8 /* MemberListItemCellContract.swift in Sources */,
+				544C0CA422D2371D006FC3F9 /* RequestSendingViewController.swift in Sources */,
 				544C0C8522CFD90C006FC3F9 /* RPopUpCellBindable.swift in Sources */,
 				544C0C9B22D218CB006FC3F9 /* RPopUpMultiFooterViewContract.swift in Sources */,
 				54FD53B522C8C02800FCBAE8 /* MemberDetailViewModel.swift in Sources */,
 				544C0C9222D0B3C7006FC3F9 /* RPopUpSimpleFooterView.swift in Sources */,
+				544C0CA322D2371D006FC3F9 /* RequestSendingMView.swift in Sources */,
 				54FD53AC22C8B95E00FCBAE8 /* MoralledItemCell.swift in Sources */,
 				544C0C8922CFDC7A006FC3F9 /* RPopUpViewDataSource.swift in Sources */,
 				54FD537522C7B95000FCBAE8 /* Int+Modifications.swift in Sources */,
+				544C0CB322D23DBC006FC3F9 /* SelectableListItemCellContract.swift in Sources */,
 				544C0C8722CFD9FA006FC3F9 /* RPopUpCellConstract.swift in Sources */,
 				54FD536F22C7B49500FCBAE8 /* UIImageView+ImageDownload.swift in Sources */,
 				5425856D22CA69BE002E0E8A /* MoralListItemHelper.swift in Sources */,
@@ -770,7 +822,9 @@
 				54FD537722C7BAD100FCBAE8 /* MemberListMViewPresenter.swift in Sources */,
 				54FD539E22C8B58300FCBAE8 /* SectionHeaderView.swift in Sources */,
 				54FD535522C7AB4500FCBAE8 /* MembersListViewController.swift in Sources */,
+				544C0CAE22D23913006FC3F9 /* SelectableListItemCell.swift in Sources */,
 				54FD536C22C7B40400FCBAE8 /* BorderedImageViewContract.swift in Sources */,
+				544C0CA522D2371D006FC3F9 /* RequestSendingService.swift in Sources */,
 				54FD539A22C8B49C00FCBAE8 /* MoralListView.swift in Sources */,
 				544C0C7C22CFD6F9006FC3F9 /* RPopUpHeaderCell.swift in Sources */,
 				5425857622CA7852002E0E8A /* RButtonContract.swift in Sources */,
@@ -778,10 +832,12 @@
 				54FD538822C7C39800FCBAE8 /* User.swift in Sources */,
 				54FD534F22C5E6DA00FCBAE8 /* Colors.swift in Sources */,
 				54FD539022C8AE8500FCBAE8 /* MemberDetailViewController.swift in Sources */,
+				544C0CA722D2371D006FC3F9 /* RequestSendingPresenter.swift in Sources */,
 				54FD533922C5E6B800FCBAE8 /* Cells.swift in Sources */,
 				54FD538C22C7FE7B00FCBAE8 /* BaseNavigationController.swift in Sources */,
 				54FD53BB22C8C24500FCBAE8 /* MemberDetailViewPresenter.swift in Sources */,
 				54FD538A22C7CFF800FCBAE8 /* FirDataServiceProvider.swift in Sources */,
+				544C0CB522D23FBA006FC3F9 /* Bool+Toggle.swift in Sources */,
 				54FD535B22C7ACAD00FCBAE8 /* MemberListMViewContract.swift in Sources */,
 				544C0C8B22CFE140006FC3F9 /* RPopUpModel.swift in Sources */,
 				5425856F22CA69DE002E0E8A /* Category.swift in Sources */,

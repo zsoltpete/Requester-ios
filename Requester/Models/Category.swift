@@ -13,6 +13,7 @@ class Category: BaseResponse, Encodable {
     
     var icon: String?
     var name: String?
+    var selected: Bool = false
     
     required init?(map: Map) {
         super.init(map: map)
@@ -28,4 +29,15 @@ class Category: BaseResponse, Encodable {
         name <- map["name"]
     }
     
+}
+
+extension Category: SelectableListItem {
+    
+    var pTitle: String {
+        return self.name ?? ""
+    }
+    
+    var pSelected: Bool {
+        return selected
+    }
 }

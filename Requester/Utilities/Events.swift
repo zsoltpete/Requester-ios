@@ -11,7 +11,7 @@ import Foundation
 /// Constains notification which will be posted in the app
 struct Events {
     
-    //It is just a fake notification to know of notification name struct
     static let ShowMemberDetailView = Notification.Name(rawValue: "ShowMemberDetailView")
+    static let ShowRequestSendingView = Notification.Name(rawValue: "ShowRequestSendingView")
     
 }

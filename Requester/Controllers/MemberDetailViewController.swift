@@ -21,6 +21,7 @@ class MemberDetailViewController: BaseViewController {
         let viewModel = MemberDetailViewModel(service: service)
         presenter = MemberDetailViewPresenter(view: masterView, viewModel: viewModel, userId: self.userId)
         presenter?.presenterDidLoad()
+        self.initNotifications()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,10 +44,28 @@ class MemberDetailViewController: BaseViewController {
         presenter?.presenterDidDisappear()
     }
     
-    func setUserId(_ userId: String) {
+    func setUserId(_ userId: String?) {
+        guard let userId = userId else {
+            return
+        }
         self.userId = userId
     }
     
+    func setControllerTitle(_ title: String) {
+        self.title = title
+    }
+    
+    private func initNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(showRequestSendingView), name: Events.ShowRequestSendingView, object: nil)
+    }
+    
+    @objc
+    private func showRequestSendingView(_ notification: Notification) {
+        
+        self.show(classType: RequestSendingViewController.self) { _ in
+            
+        }
+    }
 }
 
 extension MemberDetailViewController: RouteIdentifiable {

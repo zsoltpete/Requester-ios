@@ -38,7 +38,7 @@ class MemberListMViewPresenter: BasePresenter {
     
     private func addSelectionAction() {
         self.view.setDidSelectionAction { model in
-            NotificationCenter.default.post(name: Events.ShowMemberDetailView, object: model.pId)
+            NotificationCenter.default.post(name: Events.ShowMemberDetailView, object: model)
         }
     }
     
