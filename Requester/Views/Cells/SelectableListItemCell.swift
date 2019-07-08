@@ -38,6 +38,7 @@ class SelectableListItemCell: UITableViewCell {
     private func initialize() {
         self.setScalableComponents()
         self.titleLabel.addSelectableListItemModifier()
+        self.initSelectionObserver()
     }
     
     private func initSelectionObserver() {

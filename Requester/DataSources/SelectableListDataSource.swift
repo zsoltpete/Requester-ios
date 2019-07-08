@@ -11,9 +11,14 @@ import UIKit
 class SelectableListDataSource: NSObject {
     
     var model: SelectableListItemSection
+    var selectionAction: SelectableListItemCompletion?
     
     init(_ model: SelectableListItemSection) {
         self.model = model
+    }
+    
+    func setSelectionAction(_ action: SelectableListItemCompletion?) {
+        self.selectionAction = action
     }
     
 }
@@ -47,6 +52,11 @@ extension SelectableListDataSource: UITableViewDelegate {
         let headerView = SectionHeaderView(frame: frame)
         headerView.setTitle(model.title)
         return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = self.model.items[indexPath.row]
+        self.selectionAction?(item)
     }
     
 }

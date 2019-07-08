@@ -12,6 +12,7 @@ import UIKit
 
 typealias MoralledItemActionCompletition = ((MoralledItemCellBindable) -> Void)
 typealias DefaultCompletion = (() -> ())
+typealias SelectableListItemCompletion = ((SelectableListItem) -> ())
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

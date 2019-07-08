@@ -27,6 +27,7 @@ class RequestSendingPresenter: BasePresenter {
         super.presenterDidLoad()
         let section = SelectableListItemSection(title: "Category", items: CategoryStore.shared.getCategories())
         self.view.updateList(section)
+        self.view.selectListItemCell()
     }
     
 }

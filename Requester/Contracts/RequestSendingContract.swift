@@ -13,4 +13,7 @@ protocol RequestSendingContract: BaseTableViewContract {
     ///Updale selectable list
     func updateList(_ model: SelectableListItemSection)
     
+    ///Select list item cell
+    func selectListItemCell()
+    
 }

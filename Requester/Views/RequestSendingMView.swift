@@ -27,17 +27,52 @@ class RequestSendingMView: UIView {
         self.setScalableComponents()
     }
     
+    //swiftlint:disable weak_self_closure
+    ///Modify datasource to deselect all items
+    fileprivate func deselectAll() {
+        guard let array = self.dataSource.model.items as? [Category] else {
+            return
+        }
+        array.forEach { item in
+            item.selected = false
+        }
+        self.dataSource.model.items = array
+    }
+    
+    fileprivate func selectItem(_ title: String) {
+        guard let array = self.dataSource.model.items as? [Category] else {
+            return
+        }
+        
+        array.filter { category -> Bool in
+            category.pTitle == title
+            }.forEach { category in
+                category.selected = true
+        }
+        self.dataSource.model.items = array
+    }
+    
 }
 
 extension RequestSendingMView: ComponentsScaling {
     
     func setScalableComponents() {
-        self.tableViewHeightConstraint.constant = 200.0.pps
+        self.tableViewHeightConstraint.constant = 227.0.pps
     }
     
 }
 
 extension RequestSendingMView: RequestSendingContract {
+    
+    //swiftlint:disable weak_self_closure
+    func selectListItemCell() {
+        self.dataSource.setSelectionAction { item in
+            Log.info(item)
+            self.deselectAll()
+            self.selectItem(item.pTitle)
+            self.updateList(self.dataSource.model)
+        }
+    }
     
     func initTableView() {
         self.tableView.theme.backgroundColor = themed {
