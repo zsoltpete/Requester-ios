@@ -54,6 +54,7 @@
 		544C0CB322D23DBC006FC3F9 /* SelectableListItemCellContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */; };
 		544C0CB522D23FBA006FC3F9 /* Bool+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB422D23FBA006FC3F9 /* Bool+Toggle.swift */; };
 		544C0CB922D2456F006FC3F9 /* SelectableListItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544C0CB822D2456F006FC3F9 /* SelectableListItemSection.swift */; };
+		54C5C7C222D5119600F6742F /* RequestSendingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C5C7C122D5119600F6742F /* RequestSendingRequest.swift */; };
 		54FD52F922C5E66600FCBAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */; };
 		54FD530E22C5E66600FCBAE8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */; };
 		54FD531122C5E66600FCBAE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54FD530F22C5E66600FCBAE8 /* Localizable.strings */; };
@@ -183,6 +184,7 @@
 		544C0CB222D23DBC006FC3F9 /* SelectableListItemCellContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableListItemCellContract.swift; sourceTree = "<group>"; };
 		544C0CB422D23FBA006FC3F9 /* Bool+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Toggle.swift"; sourceTree = "<group>"; };
 		544C0CB822D2456F006FC3F9 /* SelectableListItemSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectableListItemSection.swift; sourceTree = "<group>"; };
+		54C5C7C122D5119600F6742F /* RequestSendingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSendingRequest.swift; sourceTree = "<group>"; };
 		54FD52F522C5E66600FCBAE8 /* Requester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Requester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FD52F822C5E66600FCBAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FD530D22C5E66600FCBAE8 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .swiftlint.yml; path = ../.swiftlint.yml; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				5425856A22CA697D002E0E8A /* MoralListItem.swift */,
 				5425856E22CA69DE002E0E8A /* Category.swift */,
 				544C0C8A22CFE140006FC3F9 /* RPopUpModel.swift */,
+				54C5C7C122D5119600F6742F /* RequestSendingRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -837,6 +840,7 @@
 				54FD539622C8B2BC00FCBAE8 /* UIButton+Modifiers.swift in Sources */,
 				54FD535D22C7ACFD00FCBAE8 /* BaseTableViewContract.swift in Sources */,
 				54FD537722C7BAD100FCBAE8 /* MemberListMViewPresenter.swift in Sources */,
+				54C5C7C222D5119600F6742F /* RequestSendingRequest.swift in Sources */,
 				54FD539E22C8B58300FCBAE8 /* SectionHeaderView.swift in Sources */,
 				54FD535522C7AB4500FCBAE8 /* MembersListViewController.swift in Sources */,
 				544C0CAE22D23913006FC3F9 /* SelectableListItemCell.swift in Sources */,

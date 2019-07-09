@@ -16,6 +16,7 @@ class RequestSendingMView: UIView {
     @IBOutlet weak var messageInputViewHeightConstraint: NSLayoutConstraint!
     
     //@IBOutlets
+    @IBOutlet weak var sendButton: RButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageInputView: RInputView!
     
@@ -66,6 +67,21 @@ extension RequestSendingMView: ComponentsScaling {
 }
 
 extension RequestSendingMView: RequestSendingContract {
+    
+    func getRequestModel() -> RequestSendingRequest? {
+        let message = self.messageInputView.getText()
+        guard let category = self.dataSource.getSelectedItem() as? Category else {
+            Log.warning("Not selected item")
+            return nil
+        }
+        let model = RequestSendingRequest(message: message, categoryId: category.id)
+        
+        return model
+    }
+    
+    func setSendButtonAction(_ action: DefaultCompletion?) {
+        self.sendButton.setButtonAction(action)
+    }
     
     func setMessageInputViewTitle(_ title: String) {
         self.messageInputView.setHeaderTitle(title)

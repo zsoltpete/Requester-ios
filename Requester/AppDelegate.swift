@@ -11,8 +11,8 @@ import Firebase
 import UIKit
 
 typealias MoralledItemActionCompletition = ((MoralledItemCellBindable) -> Void)
-typealias DefaultCompletion = (() -> ())
-typealias SelectableListItemCompletion = ((SelectableListItem) -> ())
+typealias DefaultCompletion = (() -> Void)
+typealias SelectableListItemCompletion = ((SelectableListItem) -> Void)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -6,9 +6,10 @@
 //  Copyright © 2019. Zsolt Pete. All rights reserved.
 //
 
-import UIKit
+import CYExtensions
 import RxCocoa
 import RxSwift
+import UIKit
 
 class RequestSendingPresenter: BasePresenter {
     
@@ -29,6 +30,12 @@ class RequestSendingPresenter: BasePresenter {
         self.view.updateList(section)
         self.view.selectListItemCell()
         self.view.setMessageInputViewTitle("Message:")
+        self.view.setSendButtonAction { [weak self] in
+            guard let request = self?.view.getRequestModel() else {
+                return
+            }
+            self?.viewModel.sendRequest(request)
+        }
     }
     
 }

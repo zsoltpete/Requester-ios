@@ -15,11 +15,11 @@ class MoralItem: BaseResponse, Encodable {
     var help: Int?
     var meetings: Int?
     
-    required init?(map: Map) {
+    required init(map: Map) {
         super.init(map: map)
     }
     
-    override init?() {
+    override init() {
         super.init()
     }
     

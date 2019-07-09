@@ -10,6 +10,12 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class RequestSendingService {
+class RequestSendingService: FirDataServiceProvider {
+    
+    ///Send request
+    func sendRequest(_ request: RequestSendingRequest) -> Completable {
+        let endPoint = "notifications/"
+        return self.firPostRequest(endPoint: endPoint, postData: request)
+    }
     
 }

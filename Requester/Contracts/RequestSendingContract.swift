@@ -19,4 +19,10 @@ protocol RequestSendingContract: BaseTableViewContract {
     ///Set message input title
     func setMessageInputViewTitle(_ title: String)
     
+    ///Set action for button
+    func setSendButtonAction(_ action: DefaultCompletion?)
+    
+    ///Create request sending model if present
+    func getRequestModel() -> RequestSendingRequest?
+    
 }

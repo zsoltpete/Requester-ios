@@ -13,5 +13,6 @@ struct Events {
     
     static let ShowMemberDetailView = Notification.Name(rawValue: "ShowMemberDetailView")
     static let ShowRequestSendingView = Notification.Name(rawValue: "ShowRequestSendingView")
+    static let RequestSent = Notification.Name(rawValue: "RequestSent")
     
 }

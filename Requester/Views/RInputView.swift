@@ -102,6 +102,10 @@ extension RInputView: ComponentsScaling {
 
 extension RInputView: RInputViewContract {
     
+    func getText() -> String {
+        return self.inputTextView.text
+    }
+    
     func setHeaderTitle(_ title: String) {
         self.headerView.setTitle(title)
     }

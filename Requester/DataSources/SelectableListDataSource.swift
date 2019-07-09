@@ -21,6 +21,12 @@ class SelectableListDataSource: NSObject {
         self.selectionAction = action
     }
     
+    func getSelectedItem() -> SelectableListItem? {
+        return self.model.items.filter { item -> Bool in
+            item.pSelected
+        }.first
+    }
+    
 }
 
 extension SelectableListDataSource: UITableViewDataSource {

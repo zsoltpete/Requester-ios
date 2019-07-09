@@ -67,7 +67,7 @@ extension DataServiceProvider {
                         }
                         let responseJson = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
                         Log.info(responseJson as Any)
-                        let baseResponse = BaseResponse()!
+                        let baseResponse = BaseResponse()
                         single(.success(baseResponse))
                         
                     } catch let error as NSError {

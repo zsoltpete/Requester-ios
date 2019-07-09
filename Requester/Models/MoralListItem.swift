@@ -5,7 +5,6 @@
 //  Created by Zsolt Pete on 2019. 07. 01..
 //  Copyright © 2019. Zsolt Pete. All rights reserved.
 //
-//swiftlint:disable force_unwrapping
 
 import Foundation
 import ObjectMapper
@@ -17,18 +16,18 @@ class MoralListItem: BaseResponse, Encodable {
     var value: Int?
     
     init(category: Category, value: Int?) {
-        super.init()!
+        super.init()
         self.name = category.name
         self.icon = category.icon
         self.value = value
         
     }
     
-    required init?(map: Map) {
+    required init(map: Map) {
         super.init(map: map)
     }
     
-    override init?() {
+    override init() {
         super.init()
     }
     

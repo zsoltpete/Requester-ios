@@ -77,4 +77,20 @@ class FirDataServiceProvider: DataServiceProvider {
         
     }
     
+    func firPostRequest(endPoint: String, postData: Encodable) -> Completable {
+        return Completable.create { [weak self]single in
+            self?.ref.child(endPoint).childByAutoId().setValue(postData.dictionary, withCompletionBlock: { [weak self]error, _ in
+                if let error = error {
+                    Log.error(error.localizedDescription)
+                    single(.error(error))
+                    return
+                }
+                single(.completed)
+                
+            })
+            return Disposables.create()
+        }
+        
+    }
+    
 }

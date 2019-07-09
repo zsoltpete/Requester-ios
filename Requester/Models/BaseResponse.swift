@@ -13,11 +13,11 @@ class BaseResponse: Mappable, IdentificableModel {
     
     var id: String
     
-    required init?(map: Map) {
+    required init(map: Map) {
         self.id = ""
     }
     
-    init?() {
+    init() {
        self.id = ""
     }
     

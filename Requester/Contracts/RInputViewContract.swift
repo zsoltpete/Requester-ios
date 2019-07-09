@@ -13,4 +13,7 @@ protocol RInputViewContract {
     ///Set header view's title
     func setHeaderTitle(_ title: String)
     
+    ///Get input text
+    func getText() -> String
+    
 }

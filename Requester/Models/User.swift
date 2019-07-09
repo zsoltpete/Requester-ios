@@ -18,12 +18,12 @@ class User: BaseResponse, Encodable {
     var moralId: String?
     var moralList: [MoralListItem]?
     
-    required init?(map: Map) {
+    required init(map: Map) {
         super.init(map: map)
     }
     
     override init() {
-        super.init()!
+        super.init()
     }
     
     override func mapping(map: Map) {

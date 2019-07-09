@@ -15,11 +15,11 @@ class Category: BaseResponse, Encodable {
     var name: String?
     var selected: Bool = false
     
-    required init?(map: Map) {
+    required init(map: Map) {
         super.init(map: map)
     }
     
-    override init?() {
+    override init() {
         super.init()
     }
     

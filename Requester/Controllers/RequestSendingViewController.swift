@@ -22,6 +22,7 @@ class RequestSendingViewController: BaseViewController {
         let viewModel = RequestSendingViewModel(service: service)
         presenter = RequestSendingPresenter(view: masterView, viewModel: viewModel)
         presenter?.presenterDidLoad()
+        self.initNotifications()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +43,15 @@ class RequestSendingViewController: BaseViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         presenter?.presenterDidDisappear()
+    }
+    
+    private func initNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(popNavController), name: Events.RequestSent, object: nil)
+    }
+    
+    @objc
+    private func popNavController() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 }

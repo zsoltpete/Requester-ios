@@ -152,12 +152,22 @@
                                     <constraint firstAttribute="height" constant="128" id="32P-kA-osu"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9D-ap-zLF" customClass="RButton" customModule="Requester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xCs-wT-Rcx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MVK-8d-Y8F" firstAttribute="leading" secondItem="aKd-jX-0c3" secondAttribute="leading" id="7EN-N3-yK1"/>
+                            <constraint firstItem="a9D-ap-zLF" firstAttribute="trailing" secondItem="aKd-jX-0c3" secondAttribute="trailing" id="BqE-l9-mzi"/>
+                            <constraint firstItem="a9D-ap-zLF" firstAttribute="leading" secondItem="aKd-jX-0c3" secondAttribute="leading" id="KfU-1K-z4U"/>
                             <constraint firstItem="WB8-1T-5Hc" firstAttribute="top" secondItem="MVK-8d-Y8F" secondAttribute="bottom" id="R0H-kh-NSz"/>
                             <constraint firstItem="aKd-jX-0c3" firstAttribute="trailing" secondItem="MVK-8d-Y8F" secondAttribute="trailing" id="foT-ef-c7J"/>
+                            <constraint firstItem="a9D-ap-zLF" firstAttribute="bottom" secondItem="aKd-jX-0c3" secondAttribute="bottom" id="hc7-QP-K2q"/>
                             <constraint firstItem="aKd-jX-0c3" firstAttribute="trailing" secondItem="WB8-1T-5Hc" secondAttribute="trailing" id="lUW-we-K1y"/>
                             <constraint firstItem="WB8-1T-5Hc" firstAttribute="leading" secondItem="aKd-jX-0c3" secondAttribute="leading" id="u0f-VI-d0c"/>
                             <constraint firstItem="MVK-8d-Y8F" firstAttribute="top" secondItem="aKd-jX-0c3" secondAttribute="top" id="xso-nT-k9U"/>
@@ -166,6 +176,7 @@
                         <connections>
                             <outlet property="messageInputView" destination="WB8-1T-5Hc" id="EOV-xi-SBS"/>
                             <outlet property="messageInputViewHeightConstraint" destination="32P-kA-osu" id="4eG-J3-dp1"/>
+                            <outlet property="sendButton" destination="a9D-ap-zLF" id="NHz-SL-ypY"/>
                             <outlet property="tableView" destination="MVK-8d-Y8F" id="AQj-Oc-fZp"/>
                             <outlet property="tableViewHeightConstraint" destination="MND-sY-j1g" id="PoU-WK-vLu"/>
                         </connections>
